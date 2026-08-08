@@ -8,7 +8,7 @@ import pytest
 from business_change_impact_agent.adapters import FixtureAdapter
 from business_change_impact_agent.case_loader import load_case
 from business_change_impact_agent.domain import ImpactClassification, Relationship
-from business_change_impact_agent.engine import analyse_case, verify_candidate_path
+from business_change_impact_agent.engine import verify_candidate_path
 from business_change_impact_agent.errors import ValidationError
 from business_change_impact_agent.rulebook import load_rulebook
 from business_change_impact_agent.service import ImpactAnalysisService
@@ -82,7 +82,9 @@ def test_every_path_is_forward_evidenced_and_within_depth() -> None:
 
 def test_collisions_are_not_duplicate_counts() -> None:
     analysis = result()
-    collision = next(item for item in analysis.collisions if item.target_entity_id == "DATA-CASE-STATUS")
+    collision = next(
+        item for item in analysis.collisions if item.target_entity_id == "DATA-CASE-STATUS"
+    )
     assert set(collision.origin_change_ids) >= {"CC-02", "CC-04", "CC-06"}
     assert sum(1 for item in analysis.impacts if item.target_entity_id == "DATA-CASE-STATUS") == 1
 

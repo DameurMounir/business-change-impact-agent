@@ -1,0 +1,59 @@
+{
+  "adapter_id": "deterministic-rule-v1",
+  "adversarial_block_rate": 1.0,
+  "analysis_digest": "a9ed0890808b514eaa1fc47cbf2c59129bbe5ff10bc307c4d68500962effbac8",
+  "answer_key_sha256": "ecfdcb3d0e617134a70843cb7ef1cd63643a039ff961d1dd73a4bc2ce89c90ee",
+  "blocked_candidate_count": 5,
+  "case_id": "ATLASBRIDGE-ONBOARDING-IMPACT-001",
+  "claim_boundary": "These metrics measure one frozen synthetic case and deterministic contract. They are not general model accuracy, production completeness or a go-live decision.",
+  "class_metrics": {
+    "conditional": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "missing_entity_ids": [],
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positive": 3,
+      "unexpected_entity_ids": []
+    },
+    "direct": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "missing_entity_ids": [],
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positive": 36,
+      "unexpected_entity_ids": []
+    },
+    "explicitly_unaffected": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "missing_entity_ids": [],
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positive": 6,
+      "unexpected_entity_ids": []
+    },
+    "indirect": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "missing_entity_ids": [],
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positive": 12,
+      "unexpected_entity_ids": []
+    }
+  },
+  "collision_count": 22,
+  "deterministic_contract_correct": true,
+  "live_model_evaluation_status": "NOT_RUN",
+  "missing_reason_codes": [],
+  "path_and_evidence_validity": 1.0,
+  "required_reason_code_coverage": 1.0,
+  "schema_version": "1.0.0",
+  "summary_match": true
+}

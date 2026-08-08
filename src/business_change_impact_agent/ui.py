@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from pathlib import Path
-from typing import Any, Mapping, cast
+from typing import Any, cast
 
 from .domain import ReviewAction
 from .errors import ImpactAgentError
@@ -15,9 +16,11 @@ from .store import ReviewStore
 
 def _rows(analysis: Mapping[str, Any], classification: str | None = None) -> list[dict[str, Any]]:
     impacts = cast(list[Mapping[str, Any]], analysis["impacts"])
-    selected = impacts if classification is None else [
-        row for row in impacts if row["classification"] == classification
-    ]
+    selected = (
+        impacts
+        if classification is None
+        else [row for row in impacts if row["classification"] == classification]
+    )
     return [
         {
             "entity": row["entity_name"],
@@ -80,12 +83,20 @@ def run() -> None:  # pragma: no cover - exercised through local Streamlit smoke
         st.warning("Conditional impacts retain unresolved assumptions or evidence gaps.")
         st.dataframe(_rows(analysis, "CONDITIONAL"), use_container_width=True, hide_index=True)
     with collisions:
-        st.dataframe([dict(item) for item in analysis["collisions"]], use_container_width=True, hide_index=True)
+        st.dataframe(
+            [dict(item) for item in analysis["collisions"]],
+            use_container_width=True,
+            hide_index=True,
+        )
     with trace:
-        target_ids = [str(row["target_entity_id"]) for row in cast(list[Mapping[str, Any]], analysis["impacts"])]
+        target_ids = [
+            str(row["target_entity_id"])
+            for row in cast(list[Mapping[str, Any]], analysis["impacts"])
+        ]
         target = st.selectbox("Impacted entity", target_ids)
         selected = next(
-            row for row in cast(list[Mapping[str, Any]], analysis["impacts"])
+            row
+            for row in cast(list[Mapping[str, Any]], analysis["impacts"])
             if row["target_entity_id"] == target
         )
         st.json(selected)

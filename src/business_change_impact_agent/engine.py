@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 from collections import defaultdict, deque
+from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import replace
-from typing import Any, Iterable, Mapping, Sequence
+from typing import Any
 
 from .canonical import canonical_json_bytes, sha256_bytes
 from .case_validation import DIRECT_RELATION_TYPES
@@ -56,8 +57,12 @@ def _path(
     classification: ImpactClassification,
 ) -> ImpactPath:
     evidence = tuple(sorted({item for edge in edges for item in edge.evidence_refs}))
-    conditions = tuple(sorted({edge.condition_id for edge in edges if edge.condition_id is not None}))
-    gaps = tuple(sorted({edge.evidence_gap_id for edge in edges if edge.evidence_gap_id is not None}))
+    conditions = tuple(
+        sorted({edge.condition_id for edge in edges if edge.condition_id is not None})
+    )
+    gaps = tuple(
+        sorted({edge.evidence_gap_id for edge in edges if edge.evidence_gap_id is not None})
+    )
     material = {
         "origin_change_id": origin_change_id,
         "classification": classification.value,
@@ -107,7 +112,8 @@ def _obligations(
     )
     items = [
         Obligation(
-            obligation_id="OBL-" + sha256_bytes(
+            obligation_id="OBL-"
+            + sha256_bytes(
                 canonical_json_bytes(
                     {
                         "target": target_entity_id,
@@ -126,7 +132,8 @@ def _obligations(
     if evidence_gap_ids and template["obligation_type"] != "CLOSE_EVIDENCE_GAP":
         items.append(
             Obligation(
-                obligation_id="OBL-" + sha256_bytes(
+                obligation_id="OBL-"
+                + sha256_bytes(
                     canonical_json_bytes(
                         {
                             "target": target_entity_id,
@@ -160,7 +167,9 @@ def _find_relationship(
         if relationship.source_entity_id == source and relationship.target_entity_id == target
     )
     if not matches:
-        raise ValidationError(f"relationship not found for standard candidate: {source} -> {target}")
+        raise ValidationError(
+            f"relationship not found for standard candidate: {source} -> {target}"
+        )
     return matches[0]
 
 
@@ -193,9 +202,13 @@ def verify_candidate_path(
     if any(marker in value.lower() for value in identifiers for marker in forbidden_markers):
         return blocked("ANSWER_KEY_IDENTIFIER", "evaluator-only identifier is forbidden at runtime")
     if requested_authority != "IMPACT_ASSESSMENT_ONLY":
-        return blocked("AUTHORITY_ESCALATION", f"requested authority is forbidden: {requested_authority}")
+        return blocked(
+            "AUTHORITY_ESCALATION", f"requested authority is forbidden: {requested_authority}"
+        )
     if traversal_direction != "FORWARD":
-        return blocked("FORBIDDEN_DIRECTION", "reverse traversal requires an explicit rule and none exists")
+        return blocked(
+            "FORBIDDEN_DIRECTION", "reverse traversal requires an explicit rule and none exists"
+        )
     if origin_change_id not in case.components or origin_change_id not in case.entities:
         return blocked("UNKNOWN_ENTITY", f"unknown change component: {origin_change_id}")
     if target_entity_id not in case.entities:
@@ -212,14 +225,20 @@ def verify_candidate_path(
         if relationship is None:
             return blocked("UNKNOWN_RELATIONSHIP", f"unknown relationship: {relationship_id}")
         if relationship.direction != "FORWARD" or relationship.source_entity_id != current:
-            return blocked("FORBIDDEN_DIRECTION", f"relationship does not continue forward: {relationship_id}")
+            return blocked(
+                "FORBIDDEN_DIRECTION", f"relationship does not continue forward: {relationship_id}"
+            )
         if not relationship.evidence_refs or any(
             evidence_ref not in case.statements for evidence_ref in relationship.evidence_refs
         ):
-            return blocked("MISSING_EVIDENCE", f"relationship evidence is invalid: {relationship_id}")
+            return blocked(
+                "MISSING_EVIDENCE", f"relationship evidence is invalid: {relationship_id}"
+            )
         if index == 0:
             if relationship.relationship_type not in DIRECT_RELATION_TYPES:
-                return blocked("UNKNOWN_RELATIONSHIP", "first edge is not an authorised direct change")
+                return blocked(
+                    "UNKNOWN_RELATIONSHIP", "first edge is not an authorised direct change"
+                )
         else:
             rule = rulebook.rule_for(relationship.relationship_type)
             if rule is None or not relationship.propagation_eligible:
@@ -244,7 +263,9 @@ def verify_candidate_path(
     }
 
 
-def _standard_blocked_candidates(case: CaseModel, rulebook: Rulebook) -> tuple[Mapping[str, Any], ...]:
+def _standard_blocked_candidates(
+    case: CaseModel, rulebook: Rulebook
+) -> tuple[Mapping[str, Any], ...]:
     workflow_path = [
         _find_relationship(case.relationships, "CC-03", "SYS-WORKFLOW"),
         _find_relationship(case.relationships, "SYS-WORKFLOW", "IFACE-SCREENING"),
@@ -347,9 +368,10 @@ def analyse_case(
                     or relationship.target_entity_id in case.components
                 ):
                     continue
-                edges = current_path.edges + (_edge(relationship),)
+                edges = (*current_path.edges, _edge(relationship))
                 conditional = any(
-                    edge.condition_id is not None or edge.evidence_gap_id is not None for edge in edges
+                    edge.condition_id is not None or edge.evidence_gap_id is not None
+                    for edge in edges
                 )
                 classification = (
                     ImpactClassification.CONDITIONAL
@@ -452,7 +474,9 @@ def analyse_case(
                 classification=ImpactClassification.EXPLICITLY_UNAFFECTED,
                 origin_change_ids=(relationship.source_entity_id,),
                 canonical_paths=(path,),
-                evidence_refs=tuple(sorted(set(entity.source_evidence_refs) | set(path.evidence_refs))),
+                evidence_refs=tuple(
+                    sorted(set(entity.source_evidence_refs) | set(path.evidence_refs))
+                ),
                 condition_ids=(),
                 evidence_gap_ids=(),
                 attention_tier=tier,
@@ -467,7 +491,9 @@ def analyse_case(
         ImpactClassification.CONDITIONAL: 2,
         ImpactClassification.EXPLICITLY_UNAFFECTED: 3,
     }
-    records.sort(key=lambda item: (classification_order[item.classification], item.target_entity_id))
+    records.sort(
+        key=lambda item: (classification_order[item.classification], item.target_entity_id)
+    )
     collisions = tuple(
         CollisionRecord(
             target_entity_id=record.target_entity_id,

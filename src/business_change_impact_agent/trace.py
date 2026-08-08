@@ -28,7 +28,7 @@ def verify_analysis_result(
     expected = analyse_case(case, rulebook, adapter_id=result.adapter_id)
     normalised_result = replace(result, adapter_id="verified-adapter", analysis_digest="")
     normalised_expected = replace(expected, adapter_id="verified-adapter", analysis_digest="")
-    if canonical_json_bytes(normalised_result.as_dict(include_digest=False)) != canonical_json_bytes(
-        normalised_expected.as_dict(include_digest=False)
-    ):
+    if canonical_json_bytes(
+        normalised_result.as_dict(include_digest=False)
+    ) != canonical_json_bytes(normalised_expected.as_dict(include_digest=False)):
         raise ValidationError("adapter output differs from the evidence-authoritative graph result")

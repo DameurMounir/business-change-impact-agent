@@ -5,9 +5,11 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from collections.abc import Mapping, Sequence
 from pathlib import Path
-from typing import Any, Mapping, Sequence, cast
+from typing import Any, cast
 
+from .canonical import pretty_json
 from .case_validation import validate_case
 from .domain import AnalysisResult, ReviewAction
 from .errors import ImpactAgentError, ReviewConflictError, ValidationError
@@ -17,7 +19,6 @@ from .review import ReviewRecord
 from .serialization import analysis_from_dict
 from .service import ImpactAnalysisService
 from .store import ReviewStore
-from .canonical import pretty_json
 
 
 def _load_mapping(path: Path) -> Mapping[str, Any]:
@@ -109,7 +110,10 @@ def run_command(args: argparse.Namespace) -> int:
         output.write_text(pretty_json(result.as_dict()), encoding="utf-8")
         if args.db:
             ReviewStore(Path(str(args.db))).create_run(run_id, result)
-        print(pretty_json({"analysis_digest": result.analysis_digest, "summary": result.summary}), end="")
+        print(
+            pretty_json({"analysis_digest": result.analysis_digest, "summary": result.summary}),
+            end="",
+        )
         return 0
     if command == "review-init":
         analysis = _analysis(Path(str(args.analysis)))

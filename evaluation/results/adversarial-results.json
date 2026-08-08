@@ -1,0 +1,110 @@
+{
+  "all_expected_blocks_observed": true,
+  "case_id": "ATLASBRIDGE-ONBOARDING-IMPACT-001",
+  "reason_codes": [
+    "ANSWER_KEY_IDENTIFIER",
+    "AUTHORITY_ESCALATION",
+    "CYCLE_DETECTED",
+    "FORBIDDEN_DIRECTION",
+    "MAX_DEPTH_EXCEEDED",
+    "MISSING_EVIDENCE",
+    "UNKNOWN_ENTITY",
+    "UNKNOWN_RELATIONSHIP"
+  ],
+  "scenarios": [
+    {
+      "candidate_id": "answer-key-runtime-import",
+      "detail": "evaluator-only identifier is forbidden at runtime",
+      "origin_change_id": "CC-01",
+      "reason_code": "ANSWER_KEY_IDENTIFIER",
+      "relationship_ids": [
+        "R-002"
+      ],
+      "status": "BLOCKED",
+      "target_entity_id": "STEP-INTAKE"
+    },
+    {
+      "candidate_id": "authority",
+      "detail": "requested authority is forbidden: GO_LIVE_DECISION",
+      "origin_change_id": "CC-01",
+      "reason_code": "AUTHORITY_ESCALATION",
+      "relationship_ids": [
+        "R-002"
+      ],
+      "status": "BLOCKED",
+      "target_entity_id": "STEP-INTAKE"
+    },
+    {
+      "candidate_id": "cycle",
+      "detail": "cycle detected at CC-01",
+      "origin_change_id": "CC-01",
+      "reason_code": "CYCLE_DETECTED",
+      "relationship_ids": [
+        "R-002",
+        "R-CYCLE-EVAL"
+      ],
+      "status": "BLOCKED",
+      "target_entity_id": "CC-01"
+    },
+    {
+      "candidate_id": "reverse",
+      "detail": "reverse traversal requires an explicit rule and none exists",
+      "origin_change_id": "CC-01",
+      "reason_code": "FORBIDDEN_DIRECTION",
+      "relationship_ids": [
+        "R-002"
+      ],
+      "status": "BLOCKED",
+      "target_entity_id": "STEP-INTAKE"
+    },
+    {
+      "candidate_id": "CAND-DEPTH-FIVE",
+      "detail": "candidate path exceeds the published depth boundary",
+      "origin_change_id": "CC-03",
+      "reason_code": "MAX_DEPTH_EXCEEDED",
+      "relationship_ids": [
+        "R-011",
+        "R-089",
+        "R-090",
+        "R-091",
+        "R-092"
+      ],
+      "status": "BLOCKED",
+      "target_entity_id": "VENDOR-CHECKRIGHT"
+    },
+    {
+      "candidate_id": "missing-evidence",
+      "detail": "relationship evidence is invalid: R-002",
+      "origin_change_id": "CC-01",
+      "reason_code": "MISSING_EVIDENCE",
+      "relationship_ids": [
+        "R-002"
+      ],
+      "status": "BLOCKED",
+      "target_entity_id": "STEP-INTAKE"
+    },
+    {
+      "candidate_id": "unknown-entity",
+      "detail": "unknown target entity: NOT-PRESENT",
+      "origin_change_id": "CC-01",
+      "reason_code": "UNKNOWN_ENTITY",
+      "relationship_ids": [
+        "R-002"
+      ],
+      "status": "BLOCKED",
+      "target_entity_id": "NOT-PRESENT"
+    },
+    {
+      "candidate_id": "unknown-relationship",
+      "detail": "unknown relationship: R-NOT-PRESENT",
+      "origin_change_id": "CC-01",
+      "reason_code": "UNKNOWN_RELATIONSHIP",
+      "relationship_ids": [
+        "R-NOT-PRESENT"
+      ],
+      "status": "BLOCKED",
+      "target_entity_id": "STEP-INTAKE"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

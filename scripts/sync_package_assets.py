@@ -26,7 +26,11 @@ def copy_assets(destination: Path) -> None:
 
 
 def tree(path: Path) -> dict[str, bytes]:
-    return {item.relative_to(path).as_posix(): item.read_bytes() for item in sorted(path.rglob("*")) if item.is_file()}
+    return {
+        item.relative_to(path).as_posix(): item.read_bytes()
+        for item in sorted(path.rglob("*"))
+        if item.is_file()
+    }
 
 
 def main() -> int:
