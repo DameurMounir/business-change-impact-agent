@@ -1,0 +1,32 @@
+{
+  "maximum_depth": 4,
+  "rules": [
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"ROLE_DEPENDENCY","relationship_type":"PERFORMED_BY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"TEAM_ACCOUNTABILITY","relationship_type":"ACCOUNTABLE_TO"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"TRAINING_DEPENDENCY","relationship_type":"REQUIRES_TRAINING"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"SYSTEM_DEPENDENCY","relationship_type":"USES_SYSTEM"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"APPLICATION_IMPLEMENTATION","relationship_type":"IMPLEMENTED_BY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"INTERFACE_CALL","relationship_type":"CALLS_INTERFACE"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"INTEGRATION_DEPENDENCY","relationship_type":"INTEGRATES_WITH"},
+    {"condition_policy":"REQUIRE_SEPARATE_CLASSIFICATION","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"EXTERNAL_SERVICE_DEPENDENCY","relationship_type":"DEPENDS_ON_SERVICE"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"VENDOR_DEPENDENCY","relationship_type":"SUPPLIED_BY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"DATA_READ_DEPENDENCY","relationship_type":"READS_DATA"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"DATA_WRITE_DEPENDENCY","relationship_type":"WRITES_DATA"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"DATA_OWNERSHIP","relationship_type":"OWNED_BY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"CONTROL_DEPENDENCY","relationship_type":"GOVERNED_BY_CONTROL"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"POLICY_DEPENDENCY","relationship_type":"GOVERNED_BY_POLICY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"REPORTING_DEPENDENCY","relationship_type":"REPORTED_IN"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"MEASUREMENT_DEPENDENCY","relationship_type":"MEASURED_BY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"COMMUNICATION_DEPENDENCY","relationship_type":"NOTIFIES_THROUGH"},
+    {"condition_policy":"REQUIRE_SEPARATE_CLASSIFICATION","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"ACCESSIBILITY_CONDITION","relationship_type":"SUBJECT_TO_ACCESSIBILITY"},
+    {"condition_policy":"REQUIRE_SEPARATE_CLASSIFICATION","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"OPERATIONAL_CONDITION","relationship_type":"OPERATED_BY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"SUPPORT_DEPENDENCY","relationship_type":"SUPPORTED_BY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"RUNBOOK_DEPENDENCY","relationship_type":"DOCUMENTED_IN_RUNBOOK"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"ESCALATION_DEPENDENCY","relationship_type":"ESCALATES_TO"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"AUTHORITY_DEPENDENCY","relationship_type":"REQUIRES_AUTHORITY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"SEGREGATION_DEPENDENCY","relationship_type":"SEGREGATED_FROM"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"CONSTRAINT_DEPENDENCY","relationship_type":"CONDITIONED_BY"},
+    {"condition_policy":"ALLOW","direction":"FORWARD","maximum_depth":4,"minimum_depth":2,"reason_code":"SERVICE_TARGET_DEPENDENCY","relationship_type":"HAS_SERVICE_TARGET"}
+  ],
+  "schema_version": "1.0.0"
+}

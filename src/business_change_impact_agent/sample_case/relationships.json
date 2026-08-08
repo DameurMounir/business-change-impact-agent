@@ -1,0 +1,2412 @@
+{
+  "relationships": [
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-001"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-001",
+      "relationship_type": "REPLACES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-01",
+      "target_entity_id": "DATA-APPLICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-001"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-002",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-01",
+      "target_entity_id": "STEP-INTAKE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-001"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-003",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-01",
+      "target_entity_id": "APP-REUSABLE-INTAKE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-001"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-004",
+      "relationship_type": "TRANSFERS_OWNERSHIP",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-01",
+      "target_entity_id": "OWNER-ONBOARDING-DATA"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-002"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-005",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-02",
+      "target_entity_id": "ROLE-CASE-OWNER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-002"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-006",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-02",
+      "target_entity_id": "PROCEDURE-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-002"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-007",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-02",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-003"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-008",
+      "relationship_type": "RESEQUENCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-03",
+      "target_entity_id": "STEP-DOC-VALIDATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-003"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-009",
+      "relationship_type": "RESEQUENCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-03",
+      "target_entity_id": "STEP-COMPLIANCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-003"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-010",
+      "relationship_type": "RESEQUENCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-03",
+      "target_entity_id": "STEP-RISK-REVIEW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-003"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-011",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-03",
+      "target_entity_id": "SYS-WORKFLOW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-003"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-012",
+      "relationship_type": "ADDS_CONTROL",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-03",
+      "target_entity_id": "CTRL-INDEPENDENCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-004"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-013",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-04",
+      "target_entity_id": "STEP-EXCEPTION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-004"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-014",
+      "relationship_type": "CHANGES_THRESHOLD",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-04",
+      "target_entity_id": "SLA-EXCEPTION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-004"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-015",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-04",
+      "target_entity_id": "ROLE-CASE-OWNER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-004"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-016",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-04",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-005"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-017",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-05",
+      "target_entity_id": "STEP-ACTIVATION-GATE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-005"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-018",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-05",
+      "target_entity_id": "STEP-HIGH-RISK-APPROVAL"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-005"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-019",
+      "relationship_type": "ADDS_CONTROL",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-05",
+      "target_entity_id": "CTRL-ACTIVATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-005"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-020",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-05",
+      "target_entity_id": "ROLE-HIGH-RISK-APPROVER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-005"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-021",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-05",
+      "target_entity_id": "DATA-APPROVAL"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-005"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-022",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-05",
+      "target_entity_id": "AUTH-HIGH-RISK"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-005"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-023",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-05",
+      "target_entity_id": "SOD-REVIEW-APPROVE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-005"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-024",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-05",
+      "target_entity_id": "KPI-ACTIVATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-006"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-025",
+      "relationship_type": "AUTOMATES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-06",
+      "target_entity_id": "STEP-NOTIFICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-006"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-026",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-06",
+      "target_entity_id": "SYS-NOTIFICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-006"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-027",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-06",
+      "target_entity_id": "TOUCH-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-006"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-028",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-06",
+      "target_entity_id": "COMM-RECEIVED"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-006"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-029",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-06",
+      "target_entity_id": "COMM-ACTION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-006"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-030",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-06",
+      "target_entity_id": "COMM-ACTIVATED"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-006"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-031",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-06",
+      "target_entity_id": "COMM-DECLINED"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-006"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-032",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-06",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-007"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-033",
+      "relationship_type": "ADDS_CONTROL",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-07",
+      "target_entity_id": "CTRL-PILOT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-007"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-034",
+      "relationship_type": "CHANGES_THRESHOLD",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-07",
+      "target_entity_id": "CON-PILOT-LIMIT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-007"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-035",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-07",
+      "target_entity_id": "RUNBOOK-PILOT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-007"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-036",
+      "relationship_type": "MODIFIES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-07",
+      "target_entity_id": "REPORT-PILOT-DASHBOARD"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-008"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-037",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "REPORT-PILOT-DASHBOARD"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-008"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-038",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "KPI-EVIDENCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-008"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-039",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "KPI-QUEUE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-008"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-040",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "KPI-NOTIFICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-008"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-041",
+      "relationship_type": "INTRODUCES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "KPI-ACTIVATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-042",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CAP-ONBOARDING",
+      "target_entity_id": "PROC-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-043",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-INTAKE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-044",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-COMPLETENESS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-045",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-DOC-VALIDATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-046",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-COMPLIANCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-047",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-RISK-REVIEW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-048",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-EXCEPTION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-049",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-ACTIVATION-GATE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-050",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-HIGH-RISK-APPROVAL"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-051",
+      "relationship_type": "CONTAINS",
+      "schema_version": "1.0.0",
+      "source_entity_id": "PROC-ONBOARDING",
+      "target_entity_id": "STEP-NOTIFICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-052",
+      "relationship_type": "PRECEDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-INTAKE",
+      "target_entity_id": "STEP-COMPLETENESS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-053",
+      "relationship_type": "PRECEDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLETENESS",
+      "target_entity_id": "STEP-DOC-VALIDATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-054",
+      "relationship_type": "PRECEDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-DOC-VALIDATION",
+      "target_entity_id": "STEP-COMPLIANCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-055",
+      "relationship_type": "PRECEDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLIANCE",
+      "target_entity_id": "STEP-RISK-REVIEW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-056",
+      "relationship_type": "PRECEDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-RISK-REVIEW",
+      "target_entity_id": "STEP-EXCEPTION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-057",
+      "relationship_type": "PRECEDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-EXCEPTION",
+      "target_entity_id": "STEP-ACTIVATION-GATE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-058",
+      "relationship_type": "PRECEDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-ACTIVATION-GATE",
+      "target_entity_id": "STEP-HIGH-RISK-APPROVAL"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-010"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-059",
+      "relationship_type": "PRECEDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-HIGH-RISK-APPROVAL",
+      "target_entity_id": "STEP-NOTIFICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-060",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-INTAKE",
+      "target_entity_id": "ROLE-CASE-OWNER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-061",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLETENESS",
+      "target_entity_id": "ROLE-CASE-OWNER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-062",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-DOC-VALIDATION",
+      "target_entity_id": "ROLE-DOC-ANALYST"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-063",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLIANCE",
+      "target_entity_id": "ROLE-COMPLIANCE-ANALYST"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-064",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-RISK-REVIEW",
+      "target_entity_id": "ROLE-RISK-ANALYST"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-065",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-EXCEPTION",
+      "target_entity_id": "ROLE-CASE-OWNER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-066",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-ACTIVATION-GATE",
+      "target_entity_id": "ROLE-RISK-ANALYST"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-067",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-HIGH-RISK-APPROVAL",
+      "target_entity_id": "ROLE-HIGH-RISK-APPROVER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-011",
+        "S-012"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-068",
+      "relationship_type": "PERFORMED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-NOTIFICATION",
+      "target_entity_id": "ROLE-CASE-OWNER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-013"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-069",
+      "relationship_type": "REQUIRES_TRAINING",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-CASE-OWNER",
+      "target_entity_id": "TRAIN-CHANGE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-014"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-070",
+      "relationship_type": "ACCOUNTABLE_TO",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-CASE-OWNER",
+      "target_entity_id": "TEAM-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-013"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-071",
+      "relationship_type": "REQUIRES_TRAINING",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-COMPLIANCE-ANALYST",
+      "target_entity_id": "TRAIN-CHANGE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-014"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-072",
+      "relationship_type": "ACCOUNTABLE_TO",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-COMPLIANCE-ANALYST",
+      "target_entity_id": "TEAM-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-013"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-073",
+      "relationship_type": "REQUIRES_TRAINING",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-DOC-ANALYST",
+      "target_entity_id": "TRAIN-CHANGE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-014"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-074",
+      "relationship_type": "ACCOUNTABLE_TO",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-DOC-ANALYST",
+      "target_entity_id": "TEAM-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-013"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-075",
+      "relationship_type": "REQUIRES_TRAINING",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-HIGH-RISK-APPROVER",
+      "target_entity_id": "TRAIN-CHANGE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-014"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-076",
+      "relationship_type": "ACCOUNTABLE_TO",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-HIGH-RISK-APPROVER",
+      "target_entity_id": "TEAM-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-013"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-077",
+      "relationship_type": "REQUIRES_TRAINING",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-RISK-ANALYST",
+      "target_entity_id": "TRAIN-CHANGE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-014"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-078",
+      "relationship_type": "ACCOUNTABLE_TO",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-RISK-ANALYST",
+      "target_entity_id": "TEAM-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-079",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-INTAKE",
+      "target_entity_id": "SYS-CASE-MANAGEMENT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-080",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLETENESS",
+      "target_entity_id": "SYS-WORKFLOW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-081",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-DOC-VALIDATION",
+      "target_entity_id": "SYS-WORKFLOW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-082",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLIANCE",
+      "target_entity_id": "SYS-WORKFLOW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-083",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-RISK-REVIEW",
+      "target_entity_id": "SYS-WORKFLOW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-084",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-EXCEPTION",
+      "target_entity_id": "SYS-CASE-MANAGEMENT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-085",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-ACTIVATION-GATE",
+      "target_entity_id": "SYS-WORKFLOW"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-086",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-HIGH-RISK-APPROVAL",
+      "target_entity_id": "SYS-CASE-MANAGEMENT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-017",
+        "S-018",
+        "S-019"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-087",
+      "relationship_type": "USES_SYSTEM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-NOTIFICATION",
+      "target_entity_id": "SYS-NOTIFICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-024"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-088",
+      "relationship_type": "IMPLEMENTED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "SYS-CASE-MANAGEMENT",
+      "target_entity_id": "APP-REUSABLE-INTAKE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-020"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-089",
+      "relationship_type": "CALLS_INTERFACE",
+      "schema_version": "1.0.0",
+      "source_entity_id": "SYS-WORKFLOW",
+      "target_entity_id": "IFACE-SCREENING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-020"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-090",
+      "relationship_type": "INTEGRATES_WITH",
+      "schema_version": "1.0.0",
+      "source_entity_id": "IFACE-SCREENING",
+      "target_entity_id": "INT-SCREENING"
+    },
+    {
+      "condition_id": "ASM-VENDOR-CAPACITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-VENDOR-CAPACITY",
+      "evidence_refs": [
+        "S-021",
+        "S-057"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-091",
+      "relationship_type": "DEPENDS_ON_SERVICE",
+      "schema_version": "1.0.0",
+      "source_entity_id": "INT-SCREENING",
+      "target_entity_id": "EXT-SCREENING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-021",
+        "S-057"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-092",
+      "relationship_type": "SUPPLIED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "EXT-SCREENING",
+      "target_entity_id": "VENDOR-CHECKRIGHT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-093",
+      "relationship_type": "WRITES_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-INTAKE",
+      "target_entity_id": "DATA-APPLICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-094",
+      "relationship_type": "WRITES_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-INTAKE",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-095",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLETENESS",
+      "target_entity_id": "DATA-APPLICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-096",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLETENESS",
+      "target_entity_id": "DATA-EVIDENCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-097",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-DOC-VALIDATION",
+      "target_entity_id": "DATA-EVIDENCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-098",
+      "relationship_type": "WRITES_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-DOC-VALIDATION",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-099",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLIANCE",
+      "target_entity_id": "DATA-APPLICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-100",
+      "relationship_type": "WRITES_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-COMPLIANCE",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-101",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-RISK-REVIEW",
+      "target_entity_id": "DATA-APPLICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-102",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-RISK-REVIEW",
+      "target_entity_id": "DATA-EVIDENCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-103",
+      "relationship_type": "WRITES_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-RISK-REVIEW",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-104",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-EXCEPTION",
+      "target_entity_id": "DATA-EVIDENCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-105",
+      "relationship_type": "WRITES_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-EXCEPTION",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-106",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-ACTIVATION-GATE",
+      "target_entity_id": "DATA-EVIDENCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-107",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-ACTIVATION-GATE",
+      "target_entity_id": "DATA-APPROVAL"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-108",
+      "relationship_type": "WRITES_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-ACTIVATION-GATE",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-109",
+      "relationship_type": "WRITES_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-HIGH-RISK-APPROVAL",
+      "target_entity_id": "DATA-APPROVAL"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-023"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-110",
+      "relationship_type": "READS_DATA",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-NOTIFICATION",
+      "target_entity_id": "DATA-CASE-STATUS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-022"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-111",
+      "relationship_type": "OWNED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "DATA-APPLICATION",
+      "target_entity_id": "OWNER-ONBOARDING-DATA"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-022"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-112",
+      "relationship_type": "OWNED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "DATA-EVIDENCE",
+      "target_entity_id": "OWNER-ONBOARDING-DATA"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-022"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-113",
+      "relationship_type": "OWNED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "DATA-CASE-STATUS",
+      "target_entity_id": "OWNER-ONBOARDING-DATA"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-022"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-114",
+      "relationship_type": "OWNED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "DATA-APPROVAL",
+      "target_entity_id": "OWNER-ONBOARDING-DATA"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-025",
+        "S-027",
+        "S-031"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-115",
+      "relationship_type": "GOVERNED_BY_CONTROL",
+      "schema_version": "1.0.0",
+      "source_entity_id": "DATA-APPLICATION",
+      "target_entity_id": "CTRL-COMPLETENESS"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-025",
+        "S-027",
+        "S-031"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-116",
+      "relationship_type": "GOVERNED_BY_CONTROL",
+      "schema_version": "1.0.0",
+      "source_entity_id": "DATA-EVIDENCE",
+      "target_entity_id": "CTRL-ACTIVATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-025",
+        "S-027",
+        "S-031"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-117",
+      "relationship_type": "GOVERNED_BY_CONTROL",
+      "schema_version": "1.0.0",
+      "source_entity_id": "DATA-CASE-STATUS",
+      "target_entity_id": "CTRL-PILOT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-025",
+        "S-027",
+        "S-031"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-118",
+      "relationship_type": "GOVERNED_BY_CONTROL",
+      "schema_version": "1.0.0",
+      "source_entity_id": "DATA-APPROVAL",
+      "target_entity_id": "CTRL-ACTIVATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-030"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-119",
+      "relationship_type": "GOVERNED_BY_POLICY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CTRL-COMPLETENESS",
+      "target_entity_id": "POLICY-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-030"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-120",
+      "relationship_type": "GOVERNED_BY_POLICY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CTRL-INDEPENDENCE",
+      "target_entity_id": "POLICY-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-030"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-121",
+      "relationship_type": "GOVERNED_BY_POLICY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CTRL-ACTIVATION",
+      "target_entity_id": "POLICY-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-030"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-122",
+      "relationship_type": "GOVERNED_BY_POLICY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CTRL-PILOT",
+      "target_entity_id": "POLICY-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-041",
+        "S-042",
+        "S-043",
+        "S-044",
+        "S-045"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-123",
+      "relationship_type": "MEASURED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "KPI-EVIDENCE",
+      "target_entity_id": "STEP-ACTIVATION-GATE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-041"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-124",
+      "relationship_type": "REPORTED_IN",
+      "schema_version": "1.0.0",
+      "source_entity_id": "KPI-EVIDENCE",
+      "target_entity_id": "REPORT-PILOT-DASHBOARD"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-041",
+        "S-042",
+        "S-043",
+        "S-044",
+        "S-045"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-125",
+      "relationship_type": "MEASURED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "KPI-QUEUE",
+      "target_entity_id": "STEP-EXCEPTION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-041"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-126",
+      "relationship_type": "REPORTED_IN",
+      "schema_version": "1.0.0",
+      "source_entity_id": "KPI-QUEUE",
+      "target_entity_id": "REPORT-PILOT-DASHBOARD"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-041",
+        "S-042",
+        "S-043",
+        "S-044",
+        "S-045"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-127",
+      "relationship_type": "MEASURED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "KPI-NOTIFICATION",
+      "target_entity_id": "STEP-NOTIFICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-041"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-128",
+      "relationship_type": "REPORTED_IN",
+      "schema_version": "1.0.0",
+      "source_entity_id": "KPI-NOTIFICATION",
+      "target_entity_id": "REPORT-PILOT-DASHBOARD"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-041",
+        "S-042",
+        "S-043",
+        "S-044",
+        "S-045"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-129",
+      "relationship_type": "MEASURED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "KPI-ACTIVATION",
+      "target_entity_id": "STEP-ACTIVATION-GATE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-041"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-130",
+      "relationship_type": "REPORTED_IN",
+      "schema_version": "1.0.0",
+      "source_entity_id": "KPI-ACTIVATION",
+      "target_entity_id": "REPORT-PILOT-DASHBOARD"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-049"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-131",
+      "relationship_type": "TESTED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TEST-PARALLEL",
+      "target_entity_id": "STEP-DOC-VALIDATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-049"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-132",
+      "relationship_type": "TESTED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TEST-PARALLEL",
+      "target_entity_id": "STEP-COMPLIANCE"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-049"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-133",
+      "relationship_type": "TESTED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TEST-PARALLEL",
+      "target_entity_id": "STEP-RISK-REVIEW"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-050"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-134",
+      "relationship_type": "TESTED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TEST-ACTIVATION",
+      "target_entity_id": "STEP-ACTIVATION-GATE"
+    },
+    {
+      "condition_id": null,
+      "direction": "REVERSE",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-050"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-135",
+      "relationship_type": "TESTED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TEST-ACTIVATION",
+      "target_entity_id": "STEP-HIGH-RISK-APPROVAL"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-033"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-136",
+      "relationship_type": "NOTIFIES_THROUGH",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TOUCH-STATUS",
+      "target_entity_id": "COMM-RECEIVED"
+    },
+    {
+      "condition_id": "ASM-ACCESSIBILITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-ACCESSIBILITY",
+      "evidence_refs": [
+        "S-034",
+        "S-040",
+        "S-058"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-137",
+      "relationship_type": "SUBJECT_TO_ACCESSIBILITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "COMM-RECEIVED",
+      "target_entity_id": "ACCESS-PLAIN-LANGUAGE"
+    },
+    {
+      "condition_id": "ASM-ACCESSIBILITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-ACCESSIBILITY",
+      "evidence_refs": [
+        "S-034",
+        "S-040",
+        "S-058"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-138",
+      "relationship_type": "SUBJECT_TO_ACCESSIBILITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "COMM-RECEIVED",
+      "target_entity_id": "ACCESS-ALTERNATIVE-ROUTE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-033"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-139",
+      "relationship_type": "NOTIFIES_THROUGH",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TOUCH-STATUS",
+      "target_entity_id": "COMM-ACTION"
+    },
+    {
+      "condition_id": "ASM-ACCESSIBILITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-ACCESSIBILITY",
+      "evidence_refs": [
+        "S-034",
+        "S-040",
+        "S-058"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-140",
+      "relationship_type": "SUBJECT_TO_ACCESSIBILITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "COMM-ACTION",
+      "target_entity_id": "ACCESS-PLAIN-LANGUAGE"
+    },
+    {
+      "condition_id": "ASM-ACCESSIBILITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-ACCESSIBILITY",
+      "evidence_refs": [
+        "S-034",
+        "S-040",
+        "S-058"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-141",
+      "relationship_type": "SUBJECT_TO_ACCESSIBILITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "COMM-ACTION",
+      "target_entity_id": "ACCESS-ALTERNATIVE-ROUTE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-033"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-142",
+      "relationship_type": "NOTIFIES_THROUGH",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TOUCH-STATUS",
+      "target_entity_id": "COMM-ACTIVATED"
+    },
+    {
+      "condition_id": "ASM-ACCESSIBILITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-ACCESSIBILITY",
+      "evidence_refs": [
+        "S-034",
+        "S-040",
+        "S-058"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-143",
+      "relationship_type": "SUBJECT_TO_ACCESSIBILITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "COMM-ACTIVATED",
+      "target_entity_id": "ACCESS-PLAIN-LANGUAGE"
+    },
+    {
+      "condition_id": "ASM-ACCESSIBILITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-ACCESSIBILITY",
+      "evidence_refs": [
+        "S-034",
+        "S-040",
+        "S-058"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-144",
+      "relationship_type": "SUBJECT_TO_ACCESSIBILITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "COMM-ACTIVATED",
+      "target_entity_id": "ACCESS-ALTERNATIVE-ROUTE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-033"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-145",
+      "relationship_type": "NOTIFIES_THROUGH",
+      "schema_version": "1.0.0",
+      "source_entity_id": "TOUCH-STATUS",
+      "target_entity_id": "COMM-DECLINED"
+    },
+    {
+      "condition_id": "ASM-ACCESSIBILITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-ACCESSIBILITY",
+      "evidence_refs": [
+        "S-034",
+        "S-040",
+        "S-058"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-146",
+      "relationship_type": "SUBJECT_TO_ACCESSIBILITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "COMM-DECLINED",
+      "target_entity_id": "ACCESS-PLAIN-LANGUAGE"
+    },
+    {
+      "condition_id": "ASM-ACCESSIBILITY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-ACCESSIBILITY",
+      "evidence_refs": [
+        "S-034",
+        "S-040",
+        "S-058"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-147",
+      "relationship_type": "SUBJECT_TO_ACCESSIBILITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "COMM-DECLINED",
+      "target_entity_id": "ACCESS-ALTERNATIVE-ROUTE"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-051"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-148",
+      "relationship_type": "DOCUMENTED_IN_RUNBOOK",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-EXCEPTION",
+      "target_entity_id": "RUNBOOK-PILOT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-051"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-149",
+      "relationship_type": "DOCUMENTED_IN_RUNBOOK",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-ACTIVATION-GATE",
+      "target_entity_id": "RUNBOOK-PILOT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-051"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-150",
+      "relationship_type": "DOCUMENTED_IN_RUNBOOK",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-NOTIFICATION",
+      "target_entity_id": "RUNBOOK-PILOT"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-039",
+        "S-052"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-151",
+      "relationship_type": "SUPPORTED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-NOTIFICATION",
+      "target_entity_id": "SUPPORT-NOTIFICATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-046"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-152",
+      "relationship_type": "HAS_SERVICE_TARGET",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-EXCEPTION",
+      "target_entity_id": "SLA-EXCEPTION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-014",
+        "S-046"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-153",
+      "relationship_type": "ESCALATES_TO",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-EXCEPTION",
+      "target_entity_id": "TEAM-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-028"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-154",
+      "relationship_type": "REQUIRES_AUTHORITY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "STEP-HIGH-RISK-APPROVAL",
+      "target_entity_id": "AUTH-HIGH-RISK"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-029"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-155",
+      "relationship_type": "SEGREGATED_FROM",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ROLE-RISK-ANALYST",
+      "target_entity_id": "ROLE-HIGH-RISK-APPROVER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-007",
+        "S-031"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-156",
+      "relationship_type": "CONDITIONED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CTRL-PILOT",
+      "target_entity_id": "CON-PILOT-LIMIT"
+    },
+    {
+      "condition_id": "ASM-DASHBOARD-LATENCY",
+      "direction": "FORWARD",
+      "evidence_gap_id": "GAP-DASHBOARD-LATENCY",
+      "evidence_refs": [
+        "S-047",
+        "S-048",
+        "S-059"
+      ],
+      "propagation_eligible": true,
+      "relationship_id": "R-157",
+      "relationship_type": "OPERATED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "REPORT-PILOT-DASHBOARD",
+      "target_entity_id": "TEAM-ONBOARDING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-057"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-158",
+      "relationship_type": "CONDITIONED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ASM-VENDOR-CAPACITY",
+      "target_entity_id": "GAP-VENDOR-CAPACITY"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-058"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-159",
+      "relationship_type": "CONDITIONED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ASM-ACCESSIBILITY",
+      "target_entity_id": "GAP-ACCESSIBILITY"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-059"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-160",
+      "relationship_type": "CONDITIONED_BY",
+      "schema_version": "1.0.0",
+      "source_entity_id": "ASM-DASHBOARD-LATENCY",
+      "target_entity_id": "GAP-DASHBOARD-LATENCY"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-060"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-161",
+      "relationship_type": "EXPLICITLY_EXCLUDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "NEG-PRICING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-060"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-162",
+      "relationship_type": "EXPLICITLY_EXCLUDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "NEG-PAYROLL"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-060"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-163",
+      "relationship_type": "EXPLICITLY_EXCLUDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "NEG-CORE-LEDGER"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-060"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-164",
+      "relationship_type": "EXPLICITLY_EXCLUDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "NEG-OFFICE-LOCATION"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-060"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-165",
+      "relationship_type": "EXPLICITLY_EXCLUDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "NEG-MARKETING"
+    },
+    {
+      "condition_id": null,
+      "direction": "FORWARD",
+      "evidence_gap_id": null,
+      "evidence_refs": [
+        "S-060"
+      ],
+      "propagation_eligible": false,
+      "relationship_id": "R-166",
+      "relationship_type": "EXPLICITLY_EXCLUDES",
+      "schema_version": "1.0.0",
+      "source_entity_id": "CC-08",
+      "target_entity_id": "NEG-EMPLOYEE-BENEFITS"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

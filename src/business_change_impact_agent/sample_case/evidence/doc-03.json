@@ -1,0 +1,72 @@
+{
+  "classification": "FICTIONAL_SYNTHETIC_CASE_EVIDENCE",
+  "document_id": "DOC-03",
+  "schema_version": "1.0.0",
+  "statements": [
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-03",
+      "locator": "section-1",
+      "schema_version": "1.0.0",
+      "statement_id": "S-017",
+      "text": "The case-management system stores the reusable application, evidence pack, case status and approval record."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-03",
+      "locator": "section-2",
+      "schema_version": "1.0.0",
+      "statement_id": "S-018",
+      "text": "The workflow system coordinates completeness, parallel checks, exception routing and activation gating."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-03",
+      "locator": "section-3",
+      "schema_version": "1.0.0",
+      "statement_id": "S-019",
+      "text": "The notification system sends controlled applicant status communications from approved templates."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-03",
+      "locator": "section-4",
+      "schema_version": "1.0.0",
+      "statement_id": "S-020",
+      "text": "The workflow system calls the screening interface, which is implemented through the screening integration."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-03",
+      "locator": "section-5",
+      "schema_version": "1.0.0",
+      "statement_id": "S-021",
+      "text": "The screening integration depends on the external CheckRight screening service."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-03",
+      "locator": "section-6",
+      "schema_version": "1.0.0",
+      "statement_id": "S-022",
+      "text": "The onboarding data owner owns the application, evidence, status and approval data objects."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-03",
+      "locator": "section-7",
+      "schema_version": "1.0.0",
+      "statement_id": "S-023",
+      "text": "Process steps read and write only the data objects listed in the traceability register."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-03",
+      "locator": "section-8",
+      "schema_version": "1.0.0",
+      "statement_id": "S-024",
+      "text": "The reusable-intake application component is implemented inside the case-management system."
+    }
+  ],
+  "title": "Systems, interfaces and data design"
+}

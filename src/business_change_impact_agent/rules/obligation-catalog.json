@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "templates": {
+    "ACCESSIBILITY_REQUIREMENT": {"description":"Obtain and retain the missing accessibility validation evidence before treating this dependency as confirmed.","obligation_type":"CLOSE_EVIDENCE_GAP"},
+    "AUTHORITY_RULE": {"description":"Confirm the named decision authority and retain segregation evidence; do not delegate authority through this assessment.","obligation_type":"VERIFY_AUTHORITY"},
+    "COMMUNICATION_TEMPLATE": {"description":"Review content, accessibility, support route and restricted-information boundaries before pilot use.","obligation_type":"VALIDATE_COMMUNICATION"},
+    "CONTROL": {"description":"Define the control owner, test evidence, failure behavior and monitoring evidence before implementation.","obligation_type":"VALIDATE_CONTROL"},
+    "DATA_OBJECT": {"description":"Confirm ownership, access, retention, lineage and migration implications before implementation.","obligation_type":"ASSESS_DATA_CHANGE"},
+    "EXTERNAL_SERVICE": {"description":"Close the vendor-capacity evidence gap and verify the service dependency within the authorised pilot boundary.","obligation_type":"VALIDATE_EXTERNAL_DEPENDENCY"},
+    "PROCESS_STEP": {"description":"Update the controlled procedure, responsibility, input/output evidence and acceptance test for this step.","obligation_type":"UPDATE_PROCESS_DESIGN"},
+    "ROLE": {"description":"Confirm responsibility, authority, workload and training impacts with the accountable business owner.","obligation_type":"CONFIRM_PEOPLE_IMPACT"},
+    "SYSTEM": {"description":"Assess configuration, interface, access, test and rollback implications without executing a system change.","obligation_type":"ASSESS_SYSTEM_CHANGE"},
+    "default": {"description":"Confirm the evidence-linked implication with the accountable owner before implementation planning.","obligation_type":"CONFIRM_IMPACT"}
+  }
+}

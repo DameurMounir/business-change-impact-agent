@@ -1,0 +1,98 @@
+{
+  "authorisation_scope": "IMPACT_ASSESSMENT_ONLY",
+  "authorised_at": "2026-08-01T09:00:00Z",
+  "case_id": "ATLASBRIDGE-ONBOARDING-IMPACT-001",
+  "components": [
+    {
+      "authorisation_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT_ONLY",
+      "component_id": "CC-01",
+      "evidence_refs": [
+        "S-001"
+      ],
+      "schema_version": "1.0.0",
+      "title": "Reusable intake record"
+    },
+    {
+      "authorisation_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT_ONLY",
+      "component_id": "CC-02",
+      "evidence_refs": [
+        "S-002"
+      ],
+      "schema_version": "1.0.0",
+      "title": "Accountable case owner"
+    },
+    {
+      "authorisation_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT_ONLY",
+      "component_id": "CC-03",
+      "evidence_refs": [
+        "S-003"
+      ],
+      "schema_version": "1.0.0",
+      "title": "Parallel independent checks"
+    },
+    {
+      "authorisation_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT_ONLY",
+      "component_id": "CC-04",
+      "evidence_refs": [
+        "S-004"
+      ],
+      "schema_version": "1.0.0",
+      "title": "Dedicated exception lane"
+    },
+    {
+      "authorisation_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT_ONLY",
+      "component_id": "CC-05",
+      "evidence_refs": [
+        "S-005"
+      ],
+      "schema_version": "1.0.0",
+      "title": "Evidence-bound activation"
+    },
+    {
+      "authorisation_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT_ONLY",
+      "component_id": "CC-06",
+      "evidence_refs": [
+        "S-006"
+      ],
+      "schema_version": "1.0.0",
+      "title": "Automated applicant notifications"
+    },
+    {
+      "authorisation_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT_ONLY",
+      "component_id": "CC-07",
+      "evidence_refs": [
+        "S-007"
+      ],
+      "schema_version": "1.0.0",
+      "title": "Controlled pilot guardrails"
+    },
+    {
+      "authorisation_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT_ONLY",
+      "component_id": "CC-08",
+      "evidence_refs": [
+        "S-008"
+      ],
+      "schema_version": "1.0.0",
+      "title": "Operational observability"
+    }
+  ],
+  "decision_question": "What changes directly and indirectly?",
+  "explicitly_unaffected_entity_ids": [
+    "NEG-PRICING",
+    "NEG-PAYROLL",
+    "NEG-CORE-LEDGER",
+    "NEG-OFFICE-LOCATION",
+    "NEG-MARKETING",
+    "NEG-EMPLOYEE-BENEFITS"
+  ],
+  "forbidden_authorities": [
+    "GO_LIVE_DECISION",
+    "RISK_ACCEPTANCE",
+    "BUDGET_APPROVAL",
+    "STAFF_ALLOCATION",
+    "VENDOR_SELECTION",
+    "CHANGE_EXECUTION"
+  ],
+  "package_title": "Controlled applicant onboarding redesign",
+  "schema_version": "1.0.0"
+}
