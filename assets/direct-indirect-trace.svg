@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="620" viewBox="0 0 1250 620" role="img" aria-labelledby="title desc">
+<title id="title">Direct and indirect impact trace</title>
+<desc id="desc">Direct and indirect impact trace generated from the committed synthetic impact assessment.</desc>
+<rect width="100%" height="100%" fill="#f7f9fc"/>
+<style>
+.title{font:700 34px system-ui,sans-serif;fill:#10233f}.h2{font:700 22px system-ui,sans-serif;fill:#10233f}.body{font:16px system-ui,sans-serif;fill:#33445d}.small{font:14px system-ui,sans-serif;fill:#53647a}.metric{font:700 30px system-ui,sans-serif;fill:#10233f}.label{font:700 14px system-ui,sans-serif;fill:#53647a;letter-spacing:.6px}.box{fill:#fff;stroke:#c7d2e3;stroke-width:2}.direct{fill:#e8f0ff;stroke:#2f6fed;stroke-width:2}.indirect{fill:#e9f8f3;stroke:#138a68;stroke-width:2}.conditional{fill:#fff5da;stroke:#c68400;stroke-width:2}.blocked{fill:#feecec;stroke:#c33f49;stroke-width:2}.dark{fill:#10233f}.white{fill:#fff}.arrow{stroke:#62748a;stroke-width:3;fill:none;marker-end:url(#arrow)}
+</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#62748a"/></marker></defs>
+
+<text x="55" y="70" class="title">Direct versus indirect trace</text>
+<rect x="55" y="125" width="210" height="100" rx="15" class="direct"/><text x="82" y="165" class="label">CHANGE COMPONENT</text><text x="82" y="198" class="h2">CC-03</text>
+<path d="M265 175 H335" class="arrow"/>
+<rect x="335" y="125" width="250" height="100" rx="15" class="direct"/><text x="362" y="165" class="label">DIRECT • MODIFIES</text><text x="362" y="198" class="h2">Workflow system</text>
+<path d="M585 175 H655" class="arrow"/>
+<rect x="655" y="125" width="230" height="100" rx="15" class="indirect"/><text x="682" y="165" class="label">INDIRECT • CALLS</text><text x="682" y="198" class="h2">Interface</text>
+<path d="M885 175 H955" class="arrow"/>
+<rect x="955" y="125" width="240" height="100" rx="15" class="indirect"/><text x="982" y="165" class="label">INDIRECT • INTEGRATES</text><text x="982" y="198" class="h2">Integration</text>
+<path d="M1075 225 V315" class="arrow"/>
+<rect x="870" y="315" width="325" height="110" rx="15" class="conditional"/><text x="900" y="357" class="label">CONDITIONAL • DEPENDS ON</text><text x="900" y="392" class="h2">External screening service</text>
+<rect x="55" y="315" width="730" height="110" rx="15" class="box"/><text x="82" y="355" class="h2">Why it is included</text><text x="82" y="388" class="body">Every edge is forward, explicitly allowed, within four edges and backed by exact evidence.</text>
+<rect x="55" y="475" width="1140" height="85" rx="15" class="blocked"/><text x="82" y="510" class="h2">Vendor remains blocked</text><text x="82" y="540" class="body">The fifth edge exceeds the published depth boundary; no unsupported impact is added.</text>
+
+</svg>
