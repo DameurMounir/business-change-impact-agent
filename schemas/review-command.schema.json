@@ -1,0 +1,53 @@
+{
+  "$id": "https://github.com/DameurMounir/business-change-impact-agent/schemas/review-command.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "CONFIRM",
+        "REQUEST_REVISION",
+        "EDIT",
+        "REJECT"
+      ]
+    },
+    "analysis_digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "comment": {
+      "maxLength": 2000,
+      "type": "string"
+    },
+    "edits": {
+      "items": {
+        "type": "object"
+      },
+      "maxItems": 50,
+      "type": "array"
+    },
+    "nonce": {
+      "maxLength": 256,
+      "minLength": 24,
+      "type": "string"
+    },
+    "reviewer": {
+      "maxLength": 120,
+      "minLength": 1,
+      "type": "string"
+    },
+    "run_id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "analysis_digest",
+    "nonce",
+    "reviewer",
+    "action"
+  ],
+  "title": "Digest-bound human review command",
+  "type": "object"
+}
