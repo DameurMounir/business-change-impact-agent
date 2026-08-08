@@ -1,0 +1,10 @@
+include README.md LICENSE NOTICE LICENSE-DATA
+recursive-include src *.py py.typed *.json
+prune evaluation
+prune cases
+prune examples
+prune docs
+prune assets
+prune tests
+prune runs
+prune exports
