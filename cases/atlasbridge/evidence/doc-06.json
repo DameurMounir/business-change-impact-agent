@@ -1,0 +1,72 @@
+{
+  "classification": "FICTIONAL_SYNTHETIC_CASE_EVIDENCE",
+  "document_id": "DOC-06",
+  "schema_version": "1.0.0",
+  "statements": [
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-06",
+      "locator": "section-1",
+      "schema_version": "1.0.0",
+      "statement_id": "S-041",
+      "text": "The pilot dashboard reports evidence completeness, open queue, notification failure and activation-control measures."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-06",
+      "locator": "section-2",
+      "schema_version": "1.0.0",
+      "statement_id": "S-042",
+      "text": "The evidence-completeness KPI measures cases that satisfy mandatory evidence at the activation gate."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-06",
+      "locator": "section-3",
+      "schema_version": "1.0.0",
+      "statement_id": "S-043",
+      "text": "The open-queue KPI monitors the daily threshold of 300 active pilot cases."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-06",
+      "locator": "section-4",
+      "schema_version": "1.0.0",
+      "statement_id": "S-044",
+      "text": "The notification-failure KPI measures controlled delivery failures requiring support action."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-06",
+      "locator": "section-5",
+      "schema_version": "1.0.0",
+      "statement_id": "S-045",
+      "text": "The activation-control KPI measures attempted or completed activations against evidence and approval rules."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-06",
+      "locator": "section-6",
+      "schema_version": "1.0.0",
+      "statement_id": "S-046",
+      "text": "The exception service target requires triage and escalation according to the pilot runbook."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-06",
+      "locator": "section-7",
+      "schema_version": "1.0.0",
+      "statement_id": "S-047",
+      "text": "Dashboard latency must be confirmed before it is used as an operational halt signal."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-06",
+      "locator": "section-8",
+      "schema_version": "1.0.0",
+      "statement_id": "S-048",
+      "text": "The pilot report is operated by the onboarding team under the pilot runbook."
+    }
+  ],
+  "title": "Pilot observability and service targets"
+}

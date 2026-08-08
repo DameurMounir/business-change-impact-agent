@@ -1,0 +1,72 @@
+{
+  "classification": "FICTIONAL_SYNTHETIC_CASE_EVIDENCE",
+  "document_id": "DOC-04",
+  "schema_version": "1.0.0",
+  "statements": [
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-04",
+      "locator": "section-1",
+      "schema_version": "1.0.0",
+      "statement_id": "S-025",
+      "text": "The completeness control blocks specialist checks until mandatory intake fields and required documents are present."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-04",
+      "locator": "section-2",
+      "schema_version": "1.0.0",
+      "statement_id": "S-026",
+      "text": "The independence control permits parallel checks only where their evidence and decision rights are independent."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-04",
+      "locator": "section-3",
+      "schema_version": "1.0.0",
+      "statement_id": "S-027",
+      "text": "The activation control blocks activation until mandatory evidence and required approvals are present."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-04",
+      "locator": "section-4",
+      "schema_version": "1.0.0",
+      "statement_id": "S-028",
+      "text": "High-risk approval authority remains with the named high-risk approver and cannot be delegated to the risk analyst."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-04",
+      "locator": "section-5",
+      "schema_version": "1.0.0",
+      "statement_id": "S-029",
+      "text": "The risk reviewer and high-risk approver are segregated roles for high-risk activation decisions."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-04",
+      "locator": "section-6",
+      "schema_version": "1.0.0",
+      "statement_id": "S-030",
+      "text": "The onboarding policy governs completeness, evidence retention, case ownership and activation outcomes."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-04",
+      "locator": "section-7",
+      "schema_version": "1.0.0",
+      "statement_id": "S-031",
+      "text": "The pilot control enforces the ten-percent, fourteen-day and queue-threshold boundaries."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-04",
+      "locator": "section-8",
+      "schema_version": "1.0.0",
+      "statement_id": "S-032",
+      "text": "No change component alters product pricing or credit policy."
+    }
+  ],
+  "title": "Controls, authority and policy"
+}

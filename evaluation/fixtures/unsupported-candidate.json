@@ -1,0 +1,10 @@
+{
+  "candidate_id": "CAND-UNSUPPORTED-001",
+  "claimed_relationship_type": "DEPENDS_ON_SERVICE",
+  "evidence_refs": [
+    "S-064"
+  ],
+  "expected_reason_code": "UNKNOWN_ENTITY",
+  "origin_change_id": "CC-06",
+  "target_entity_id": "VENDOR-NOT-IN-GRAPH"
+}

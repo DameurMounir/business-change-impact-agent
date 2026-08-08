@@ -1,0 +1,72 @@
+{
+  "classification": "FICTIONAL_SYNTHETIC_CASE_EVIDENCE",
+  "document_id": "DOC-02",
+  "schema_version": "1.0.0",
+  "statements": [
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-02",
+      "locator": "section-1",
+      "schema_version": "1.0.0",
+      "statement_id": "S-009",
+      "text": "Applicant onboarding is the end-to-end process inside the onboarding business capability."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-02",
+      "locator": "section-2",
+      "schema_version": "1.0.0",
+      "statement_id": "S-010",
+      "text": "The controlled sequence is intake, completeness, independent checks, exception handling when required, activation gate, approval when high risk, and notification."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-02",
+      "locator": "section-3",
+      "schema_version": "1.0.0",
+      "statement_id": "S-011",
+      "text": "The case owner performs intake, completeness and exception coordination and remains accountable for case progression."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-02",
+      "locator": "section-4",
+      "schema_version": "1.0.0",
+      "statement_id": "S-012",
+      "text": "Document, compliance and risk analysts perform their specialist checks; the high-risk approver is a separate named role."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-02",
+      "locator": "section-5",
+      "schema_version": "1.0.0",
+      "statement_id": "S-013",
+      "text": "All affected roles require the onboarding change briefing and procedure training before pilot access."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-02",
+      "locator": "section-6",
+      "schema_version": "1.0.0",
+      "statement_id": "S-014",
+      "text": "The onboarding team operates the exception queue and escalates threshold breaches to the operations lead role described in the runbook."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-02",
+      "locator": "section-7",
+      "schema_version": "1.0.0",
+      "statement_id": "S-015",
+      "text": "The onboarding procedure records ownership, exception handling, activation evidence and notification steps."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-02",
+      "locator": "section-8",
+      "schema_version": "1.0.0",
+      "statement_id": "S-016",
+      "text": "The standard process does not change payroll, procurement or office-location activities."
+    }
+  ],
+  "title": "Operating model and process map"
+}

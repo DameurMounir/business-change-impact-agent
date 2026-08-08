@@ -1,0 +1,72 @@
+{
+  "classification": "FICTIONAL_SYNTHETIC_CASE_EVIDENCE",
+  "document_id": "DOC-01",
+  "schema_version": "1.0.0",
+  "statements": [
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-01",
+      "locator": "section-1",
+      "schema_version": "1.0.0",
+      "statement_id": "S-001",
+      "text": "CC-01 authorises one controlled reusable application record to replace repeated capture of applicant information."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-01",
+      "locator": "section-2",
+      "schema_version": "1.0.0",
+      "statement_id": "S-002",
+      "text": "CC-02 authorises one accountable case owner from accepted submission until activation, decline, withdrawal or closure."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-01",
+      "locator": "section-3",
+      "schema_version": "1.0.0",
+      "statement_id": "S-003",
+      "text": "CC-03 authorises document validation, compliance screening and standard-risk review to run in parallel after completeness where controls are independent."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-01",
+      "locator": "section-4",
+      "schema_version": "1.0.0",
+      "statement_id": "S-004",
+      "text": "CC-04 authorises a dedicated exception lane with reason codes, ownership, escalation rules and service targets."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-01",
+      "locator": "section-5",
+      "schema_version": "1.0.0",
+      "statement_id": "S-005",
+      "text": "CC-05 authorises activation only when mandatory evidence is present and retains named human approval for every high-risk activation."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-01",
+      "locator": "section-6",
+      "schema_version": "1.0.0",
+      "statement_id": "S-006",
+      "text": "CC-06 authorises controlled notifications for received, action-required, review-complete, activated, declined and withdrawn states."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-01",
+      "locator": "section-7",
+      "schema_version": "1.0.0",
+      "statement_id": "S-007",
+      "text": "CC-07 authorises a ten-percent pilot for fourteen calendar days with a daily open-queue threshold of 300 and explicit halt conditions."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-01",
+      "locator": "section-8",
+      "schema_version": "1.0.0",
+      "statement_id": "S-008",
+      "text": "CC-08 authorises monitoring of evidence completeness, queue size, exception age, notification failure and activation controls."
+    }
+  ],
+  "title": "Authorised onboarding change charter"
+}

@@ -1,0 +1,72 @@
+{
+  "classification": "FICTIONAL_SYNTHETIC_CASE_EVIDENCE",
+  "document_id": "DOC-07",
+  "schema_version": "1.0.0",
+  "statements": [
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-07",
+      "locator": "section-1",
+      "schema_version": "1.0.0",
+      "statement_id": "S-049",
+      "text": "The parallel-check test proves that independent checks can run concurrently only after completeness."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-07",
+      "locator": "section-2",
+      "schema_version": "1.0.0",
+      "statement_id": "S-050",
+      "text": "The activation test proves that missing evidence or missing high-risk approval blocks activation."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-07",
+      "locator": "section-3",
+      "schema_version": "1.0.0",
+      "statement_id": "S-051",
+      "text": "The pilot runbook defines queue monitoring, escalation, halt, recovery and evidence-capture steps."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-07",
+      "locator": "section-4",
+      "schema_version": "1.0.0",
+      "statement_id": "S-052",
+      "text": "The notification support procedure defines retry, alternative contact and unresolved-failure escalation."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-07",
+      "locator": "section-5",
+      "schema_version": "1.0.0",
+      "statement_id": "S-053",
+      "text": "Test evidence must retain the case, input evidence, expected rule and observed outcome."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-07",
+      "locator": "section-6",
+      "schema_version": "1.0.0",
+      "statement_id": "S-054",
+      "text": "The runbook does not authorise staff, budget or vendor commitments."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-07",
+      "locator": "section-7",
+      "schema_version": "1.0.0",
+      "statement_id": "S-055",
+      "text": "A local demonstration review confirms only the assessment packet, not implementation or go-live."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-07",
+      "locator": "section-8",
+      "schema_version": "1.0.0",
+      "statement_id": "S-056",
+      "text": "The case data is fictional and must not be replaced with private production evidence in this public repository."
+    }
+  ],
+  "title": "Test, runbook and support evidence"
+}
