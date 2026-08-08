@@ -1,0 +1,155 @@
+{
+  "$defs": {
+    "impact": {
+      "properties": {
+        "attention_tier": {
+          "enum": [
+            "CRITICAL",
+            "HIGH",
+            "MEDIUM",
+            "LOW"
+          ]
+        },
+        "canonical_paths": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "classification": {
+          "enum": [
+            "DIRECT",
+            "INDIRECT",
+            "CONDITIONAL",
+            "EXPLICITLY_UNAFFECTED"
+          ]
+        },
+        "evidence_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "obligations": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "origin_change_ids": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "reason_codes": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "target_entity_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "target_entity_id",
+        "classification",
+        "origin_change_ids",
+        "canonical_paths",
+        "evidence_refs",
+        "attention_tier",
+        "reason_codes",
+        "obligations"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://github.com/DameurMounir/business-change-impact-agent/schemas/analysis-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adapter_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "analysis_digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "authority_statement": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "blocked_candidates": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "case_digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "case_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "collisions": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "decision_question": {
+      "const": "What changes directly and indirectly?"
+    },
+    "domain_heatmap": {
+      "type": "object"
+    },
+    "impacts": {
+      "items": {
+        "$ref": "#/$defs/impact"
+      },
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "maximum_depth": {
+      "maximum": 8,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "rulebook_digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "summary": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "case_digest",
+    "decision_question",
+    "adapter_id",
+    "rulebook_digest",
+    "maximum_depth",
+    "impacts",
+    "collisions",
+    "summary",
+    "authority_statement",
+    "limitations",
+    "analysis_digest"
+  ],
+  "title": "Business Change Impact Analysis Result",
+  "type": "object"
+}
