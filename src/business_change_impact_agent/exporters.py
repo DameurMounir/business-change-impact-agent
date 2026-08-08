@@ -5,17 +5,16 @@ from __future__ import annotations
 import html
 import json
 import re
+from collections.abc import Mapping
 from pathlib import Path
-from typing import Any, Mapping, cast
+from typing import Any, cast
 
 from .canonical import canonical_json_bytes, pretty_json, sha256_bytes
 from .errors import ValidationError
 from .store import ReviewStore
 
 _MD_MARKER = re.compile(r"^<!-- impact-snapshot-sha256:([0-9a-f]{64}) -->$")
-_HTML_MARKER = re.compile(
-    r'<meta name="impact-snapshot-sha256" content="([0-9a-f]{64})">'
-)
+_HTML_MARKER = re.compile(r'<meta name="impact-snapshot-sha256" content="([0-9a-f]{64})">')
 
 
 def build_export_snapshot(store: ReviewStore, run_id: str) -> Mapping[str, Any]:
@@ -128,7 +127,9 @@ def export_html(snapshot: Mapping[str, Any]) -> str:
             row["attention_tier"],
             origins,
         ]
-        rows_html.append("<tr>" + "".join(f"<td>{html.escape(str(value))}</td>" for value in values) + "</tr>")
+        rows_html.append(
+            "<tr>" + "".join(f"<td>{html.escape(str(value))}</td>" for value in values) + "</tr>"
+        )
     review = snapshot.get("review")
     if isinstance(review, dict):
         review_html = (
@@ -143,7 +144,8 @@ def export_html(snapshot: Mapping[str, Any]) -> str:
     else:
         review_html = "<p>No terminal human review has been recorded. This is a draft export.</p>"
     limitations = "".join(
-        f"<li>{html.escape(str(value))}</li>" for value in cast(list[object], analysis["limitations"])
+        f"<li>{html.escape(str(value))}</li>"
+        for value in cast(list[object], analysis["limitations"])
     )
     return f"""<!doctype html>
 <html lang="en">
@@ -161,15 +163,15 @@ code{{overflow-wrap:anywhere}}.status{{font-weight:700}}@media(max-width:700px){
 </head>
 <body>
 <h1>Business Change Impact Assessment</h1>
-<p class="status">Status: {html.escape(str(snapshot['export_status']))}</p>
-<p>Run: <code>{html.escape(str(snapshot['run_id']))}</code><br>
-Analysis digest: <code>{html.escape(str(analysis['analysis_digest']))}</code><br>
-Review state: <code>{html.escape(str(snapshot['review_state']))}</code></p>
-<div class="banner">{html.escape(str(snapshot['authority_boundary']))}</div>
+<p class="status">Status: {html.escape(str(snapshot["export_status"]))}</p>
+<p>Run: <code>{html.escape(str(snapshot["run_id"]))}</code><br>
+Analysis digest: <code>{html.escape(str(analysis["analysis_digest"]))}</code><br>
+Review state: <code>{html.escape(str(snapshot["review_state"]))}</code></p>
+<div class="banner">{html.escape(str(snapshot["authority_boundary"]))}</div>
 <h2>Summary</h2><ul>{summary_html}</ul>
 <h2>Impact register</h2>
 <table><thead><tr><th>Entity</th><th>Classification</th><th>Domain</th><th>Attention</th><th>Origin changes</th></tr></thead>
-<tbody>{''.join(rows_html)}</tbody></table>
+<tbody>{"".join(rows_html)}</tbody></table>
 <h2>Human review</h2>{review_html}
 <h2>Limitations</h2><ul>{limitations}</ul>
 </body>
@@ -211,6 +213,10 @@ def verify_export_equivalence(json_path: Path, markdown_path: Path, html_path: P
         raise ValidationError("export digest marker is missing")
     if markdown_match.group(1) != digest or html_match.group(1) != digest:
         raise ValidationError("JSON, Markdown and HTML exports are not equivalent")
-    if "<script src=" in html_text.lower() or "http://" in html_text.lower() or "https://" in html_text.lower():
+    if (
+        "<script src=" in html_text.lower()
+        or "http://" in html_text.lower()
+        or "https://" in html_text.lower()
+    ):
         raise ValidationError("HTML export contains an external dependency")
     return digest

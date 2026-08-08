@@ -40,7 +40,7 @@ def generate(root: Path) -> None:
                 "summary",
                 "authority_statement",
                 "limitations",
-                "analysis_digest"
+                "analysis_digest",
             ],
             "properties": {
                 "schema_version": {"const": "1.0.0"},
@@ -57,7 +57,7 @@ def generate(root: Path) -> None:
                 "summary": {"type": "object"},
                 "authority_statement": {"type": "string", "minLength": 1},
                 "limitations": {"type": "array", "items": {"type": "string"}},
-                "analysis_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+                "analysis_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
             },
             "$defs": {
                 "impact": {
@@ -70,21 +70,23 @@ def generate(root: Path) -> None:
                         "evidence_refs",
                         "attention_tier",
                         "reason_codes",
-                        "obligations"
+                        "obligations",
                     ],
                     "properties": {
                         "target_entity_id": {"type": "string"},
-                        "classification": {"enum": ["DIRECT", "INDIRECT", "CONDITIONAL", "EXPLICITLY_UNAFFECTED"]},
+                        "classification": {
+                            "enum": ["DIRECT", "INDIRECT", "CONDITIONAL", "EXPLICITLY_UNAFFECTED"]
+                        },
                         "origin_change_ids": {"type": "array", "items": {"type": "string"}},
                         "canonical_paths": {"type": "array", "items": {"type": "object"}},
                         "evidence_refs": {"type": "array", "items": {"type": "string"}},
                         "attention_tier": {"enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"]},
                         "reason_codes": {"type": "array", "items": {"type": "string"}},
-                        "obligations": {"type": "array", "items": {"type": "object"}}
-                    }
+                        "obligations": {"type": "array", "items": {"type": "object"}},
+                    },
                 }
             },
-            "additionalProperties": False
+            "additionalProperties": False,
         },
     )
     write_json(
@@ -102,15 +104,18 @@ def generate(root: Path) -> None:
                 "reviewer": {"type": "string", "minLength": 1, "maxLength": 120},
                 "action": {"enum": ["CONFIRM", "REQUEST_REVISION", "EDIT", "REJECT"]},
                 "comment": {"type": "string", "maxLength": 2000},
-                "edits": {"type": "array", "maxItems": 50, "items": {"type": "object"}}
+                "edits": {"type": "array", "maxItems": 50, "items": {"type": "object"}},
             },
-            "additionalProperties": False
+            "additionalProperties": False,
         },
     )
 
 
 def digest_tree(root: Path) -> dict[str, bytes]:
-    return {path.relative_to(root).as_posix(): path.read_bytes() for path in sorted(root.rglob("*.json"))}
+    return {
+        path.relative_to(root).as_posix(): path.read_bytes()
+        for path in sorted(root.rglob("*.json"))
+    }
 
 
 def main() -> int:

@@ -1,14 +1,19 @@
 from __future__ import annotations
 
 import sqlite3
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import TimeoutError as FuturesTimeoutError
 from contextlib import closing
-from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
 from pathlib import Path
 
 import pytest
 
 from business_change_impact_agent.domain import ReviewAction, ReviewState
-from business_change_impact_agent.errors import ReviewConflictError, SecurityBoundaryError, ValidationError
+from business_change_impact_agent.errors import (
+    ReviewConflictError,
+    SecurityBoundaryError,
+    ValidationError,
+)
 from business_change_impact_agent.service import ImpactAnalysisService
 from business_change_impact_agent.store import ReviewStore
 
@@ -69,34 +74,50 @@ def test_expired_and_superseded_challenges_fail(tmp_path: Path) -> None:
     result = analysis()
     store.create_run("expired", result)
     expired = store.issue_challenge(
-        "expired", result.analysis_digest, ttl_seconds=1,
+        "expired",
+        result.analysis_digest,
+        ttl_seconds=1,
         nonce_factory=lambda: "expired-nonce-000000000000000001",
     )
     clock.value += 2
     with pytest.raises(ReviewConflictError, match="expired"):
         store.record_review(
-            run_id="expired", analysis_digest=result.analysis_digest, nonce=expired.nonce,
-            reviewer="Reviewer", action=ReviewAction.REJECT,
+            run_id="expired",
+            analysis_digest=result.analysis_digest,
+            nonce=expired.nonce,
+            reviewer="Reviewer",
+            action=ReviewAction.REJECT,
         )
 
     store.create_run("superseded", result)
     first = store.issue_challenge(
-        "superseded", result.analysis_digest,
+        "superseded",
+        result.analysis_digest,
         nonce_factory=lambda: "superseded-nonce-00000000000001",
     )
     second = store.issue_challenge(
-        "superseded", result.analysis_digest,
+        "superseded",
+        result.analysis_digest,
         nonce_factory=lambda: "replacement-nonce-000000000000001",
     )
     with pytest.raises(ReviewConflictError, match="superseded"):
         store.record_review(
-            run_id="superseded", analysis_digest=result.analysis_digest, nonce=first.nonce,
-            reviewer="Reviewer", action=ReviewAction.REJECT,
+            run_id="superseded",
+            analysis_digest=result.analysis_digest,
+            nonce=first.nonce,
+            reviewer="Reviewer",
+            action=ReviewAction.REJECT,
         )
-    assert store.record_review(
-        run_id="superseded", analysis_digest=result.analysis_digest, nonce=second.nonce,
-        reviewer="Reviewer", action=ReviewAction.REQUEST_REVISION,
-    ).state == ReviewState.REVISION_REQUESTED
+    assert (
+        store.record_review(
+            run_id="superseded",
+            analysis_digest=result.analysis_digest,
+            nonce=second.nonce,
+            reviewer="Reviewer",
+            action=ReviewAction.REQUEST_REVISION,
+        ).state
+        == ReviewState.REVISION_REQUESTED
+    )
 
 
 def test_bounded_edit_cannot_change_evidence_or_paths(tmp_path: Path) -> None:
@@ -104,7 +125,8 @@ def test_bounded_edit_cannot_change_evidence_or_paths(tmp_path: Path) -> None:
     result = analysis()
     store.create_run("edit-run", result)
     challenge = store.issue_challenge(
-        "edit-run", result.analysis_digest,
+        "edit-run",
+        result.analysis_digest,
         nonce_factory=lambda: "bounded-edit-nonce-00000000000001",
     )
     record = store.record_review(
@@ -113,23 +135,29 @@ def test_bounded_edit_cannot_change_evidence_or_paths(tmp_path: Path) -> None:
         nonce=challenge.nonce,
         reviewer="Reviewer",
         action=ReviewAction.EDIT,
-        edits=[{
-            "target_entity_id": "EXT-SCREENING",
-            "attention_tier": "HIGH",
-            "review_note": "Keep conditional until vendor evidence is retained.",
-        }],
+        edits=[
+            {
+                "target_entity_id": "EXT-SCREENING",
+                "attention_tier": "HIGH",
+                "review_note": "Keep conditional until vendor evidence is retained.",
+            }
+        ],
     )
     assert record.state == ReviewState.CONFIRMED_WITH_EDITS
 
     store.create_run("bad-edit", result)
     bad = store.issue_challenge(
-        "bad-edit", result.analysis_digest,
+        "bad-edit",
+        result.analysis_digest,
         nonce_factory=lambda: "bad-edit-review-nonce-0000000001",
     )
     with pytest.raises(ValidationError, match="forbidden fields"):
         store.record_review(
-            run_id="bad-edit", analysis_digest=result.analysis_digest, nonce=bad.nonce,
-            reviewer="Reviewer", action=ReviewAction.EDIT,
+            run_id="bad-edit",
+            analysis_digest=result.analysis_digest,
+            nonce=bad.nonce,
+            reviewer="Reviewer",
+            action=ReviewAction.EDIT,
             edits=[{"target_entity_id": "EXT-SCREENING", "evidence_refs": ["S-999"]}],
         )
 
@@ -140,15 +168,19 @@ def test_concurrent_double_confirmation_has_one_winner(tmp_path: Path) -> None:
     store = ReviewStore(db)
     store.create_run("concurrent", result)
     challenge = store.issue_challenge(
-        "concurrent", result.analysis_digest,
+        "concurrent",
+        result.analysis_digest,
         nonce_factory=lambda: "concurrent-review-nonce-0000000001",
     )
 
     def attempt() -> str:
         try:
             ReviewStore(db).record_review(
-                run_id="concurrent", analysis_digest=result.analysis_digest,
-                nonce=challenge.nonce, reviewer="Reviewer", action=ReviewAction.CONFIRM,
+                run_id="concurrent",
+                analysis_digest=result.analysis_digest,
+                nonce=challenge.nonce,
+                reviewer="Reviewer",
+                action=ReviewAction.CONFIRM,
             )
             return "confirmed"
         except ReviewConflictError:

@@ -4,9 +4,10 @@ from __future__ import annotations
 
 import json
 from collections import Counter, defaultdict
+from collections.abc import Iterable, Mapping
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Iterable, Mapping
+from typing import Any
 
 from .canonical import sha256_file
 from .errors import SecurityBoundaryError, ValidationError
@@ -263,7 +264,9 @@ def validate_case(case_dir: Path) -> CaseSummary:
             text = statement.get("text")
             locator = statement.get("locator")
             classification = statement.get("classification")
-            if not all(isinstance(value, str) and value for value in (text, locator, classification)):
+            if not all(
+                isinstance(value, str) and value for value in (text, locator, classification)
+            ):
                 raise ValidationError(f"incomplete statement: {statement_id}")
             statements[statement_id] = statement
     if len(statements) < 50:
@@ -298,7 +301,9 @@ def validate_case(case_dir: Path) -> CaseSummary:
             raise ValidationError(f"entity lacks evidence: {entity['entity_id']}")
         unknown_refs = sorted(set(evidence_refs) - statements.keys())
         if unknown_refs:
-            raise ValidationError(f"entity has unknown evidence: {entity['entity_id']} {unknown_refs}")
+            raise ValidationError(
+                f"entity has unknown evidence: {entity['entity_id']} {unknown_refs}"
+            )
         if entity.get("schema_version") != SCHEMA_VERSION:
             raise ValidationError(f"entity schema mismatch: {entity['entity_id']}")
     missing_entity_types = ENTITY_TYPES - entity_type_counts.keys()
@@ -339,11 +344,16 @@ def validate_case(case_dir: Path) -> CaseSummary:
             raise ValidationError(f"relationship lacks evidence: {relationship_id}")
         unknown_refs = sorted(set(evidence_refs) - statements.keys())
         if unknown_refs:
-            raise ValidationError(f"relationship has unknown evidence: {relationship_id} {unknown_refs}")
+            raise ValidationError(
+                f"relationship has unknown evidence: {relationship_id} {unknown_refs}"
+            )
         condition_id = relationship.get("condition_id")
         if condition_id is not None:
             condition = entity_by_id.get(condition_id)
-            if condition is None or condition.get("entity_type") not in {"ASSUMPTION", "CONSTRAINT"}:
+            if condition is None or condition.get("entity_type") not in {
+                "ASSUMPTION",
+                "CONSTRAINT",
+            }:
                 raise ValidationError(f"invalid condition on {relationship_id}: {condition_id}")
         gap_id = relationship.get("evidence_gap_id")
         if gap_id is not None:

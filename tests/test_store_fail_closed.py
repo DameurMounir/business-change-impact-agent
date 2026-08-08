@@ -7,7 +7,11 @@ from pathlib import Path
 import pytest
 
 from business_change_impact_agent.domain import ReviewAction, ReviewState
-from business_change_impact_agent.errors import ReviewConflictError, SecurityBoundaryError, ValidationError
+from business_change_impact_agent.errors import (
+    ReviewConflictError,
+    SecurityBoundaryError,
+    ValidationError,
+)
 from business_change_impact_agent.service import ImpactAnalysisService
 from business_change_impact_agent.store import ReviewStore
 

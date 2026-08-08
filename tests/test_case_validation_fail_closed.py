@@ -158,9 +158,9 @@ def _mutate_case(case_dir: Path, mutation: str) -> None:
         entity["entity_type"] = "PROCESS"
         _write_json(entities_path, entities_payload)
     elif mutation == "component-entity-mismatch":
-        next(
-            item for item in entities_payload["entities"] if item["entity_id"] == "CC-01"
-        )["entity_type"] = "PROCESS"
+        next(item for item in entities_payload["entities"] if item["entity_id"] == "CC-01")[
+            "entity_type"
+        ] = "PROCESS"
         _write_json(entities_path, entities_payload)
     elif mutation == "relationship-count":
         relationships_payload["relationships"] = relationships_payload["relationships"][:99]
@@ -212,18 +212,16 @@ def _mutate_case(case_dir: Path, mutation: str) -> None:
         relationships_payload["relationships"][0]["schema_version"] = "9.0.0"
         _write_json(relationships_path, relationships_payload)
     elif mutation == "unaffected-count":
-        package["explicitly_unaffected_entity_ids"] = package[
-            "explicitly_unaffected_entity_ids"
-        ][:5]
+        package["explicitly_unaffected_entity_ids"] = package["explicitly_unaffected_entity_ids"][
+            :5
+        ]
         _write_json(package_path, package)
     elif mutation == "unaffected-invalid":
         package["explicitly_unaffected_entity_ids"][0] = "CC-01"
         _write_json(package_path, package)
     elif mutation == "gap-count":
         gaps = [
-            item
-            for item in entities_payload["entities"]
-            if item["entity_type"] == "EVIDENCE_GAP"
+            item for item in entities_payload["entities"] if item["entity_type"] == "EVIDENCE_GAP"
         ]
         changed, replacement = gaps[0], gaps[1]
         changed["entity_type"] = "ASSUMPTION"
@@ -299,9 +297,7 @@ def _mutate_case(case_dir: Path, mutation: str) -> None:
         ("case-id", "case ID mismatch"),
     ],
 )
-def test_case_mutations_fail_closed(
-    tmp_path: Path, mutation: str, message: str
-) -> None:
+def test_case_mutations_fail_closed(tmp_path: Path, mutation: str, message: str) -> None:
     target = _copy_case(tmp_path)
     _mutate_case(target, mutation)
     _refresh_manifest(target)
@@ -322,9 +318,7 @@ def test_case_mutations_fail_closed(
         ),
     ],
 )
-def test_manifest_shape_is_fail_closed(
-    tmp_path: Path, payload: object, message: str
-) -> None:
+def test_manifest_shape_is_fail_closed(tmp_path: Path, payload: object, message: str) -> None:
     target = _copy_case(tmp_path)
     _write_json(target / "manifest.json", payload)
     with pytest.raises(ValidationError, match=message):

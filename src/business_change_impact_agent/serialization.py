@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from typing import Any, Mapping, Sequence, cast
+from collections.abc import Mapping, Sequence
+from typing import Any, cast
 
 from .domain import (
     AnalysisResult,
@@ -69,7 +70,9 @@ def analysis_from_dict(value: Mapping[str, Any]) -> AnalysisResult:
                     edges=tuple(edges),
                     evidence_refs=_strings(path.get("evidence_refs"), "path evidence_refs"),
                     condition_ids=_strings(path.get("condition_ids"), "path condition_ids"),
-                    evidence_gap_ids=_strings(path.get("evidence_gap_ids"), "path evidence_gap_ids"),
+                    evidence_gap_ids=_strings(
+                        path.get("evidence_gap_ids"), "path evidence_gap_ids"
+                    ),
                     path_digest=str(path["path_digest"]),
                 )
             )

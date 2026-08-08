@@ -6,10 +6,10 @@ import json
 import secrets
 import sqlite3
 import time
-from collections.abc import Iterator
+from collections.abc import Callable, Iterator, Mapping, Sequence
 from contextlib import contextmanager
 from pathlib import Path
-from typing import Any, Callable, Mapping, Sequence, cast
+from typing import Any, cast
 
 from .canonical import canonical_json_bytes, pretty_json, sha256_bytes
 from .domain import AnalysisResult, ReviewAction, ReviewState
@@ -82,7 +82,9 @@ class ReviewStore:
             raise SecurityBoundaryError(f"review database may not be a symlink: {path}")
         path.parent.mkdir(parents=True, exist_ok=True)
         if path.parent.is_symlink():
-            raise SecurityBoundaryError(f"review database parent may not be a symlink: {path.parent}")
+            raise SecurityBoundaryError(
+                f"review database parent may not be a symlink: {path.parent}"
+            )
         with self._connect() as connection:
             connection.executescript(_SCHEMA)
 

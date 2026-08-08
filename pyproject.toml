@@ -36,7 +36,7 @@ dev = [
   "detect-secrets>=1.5,<2",
   "mypy>=1.17,<2",
   "pip-audit>=2.9,<3",
-  "pytest>=8.4,<9",
+  "pytest==9.0.3",
   "pytest-cov>=6,<8",
   "ruff>=0.12,<1",
   "twine>=6.1,<7",

@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from dataclasses import dataclass
 from enum import StrEnum
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any
 
 
 class ImpactClassification(StrEnum):
@@ -146,7 +147,10 @@ class ImpactPath:
     def node_ids(self) -> tuple[str, ...]:
         if not self.edges:
             return (self.origin_change_id,)
-        return (self.edges[0].source_entity_id,) + tuple(edge.target_entity_id for edge in self.edges)
+        return (
+            self.edges[0].source_entity_id,
+            *tuple(edge.target_entity_id for edge in self.edges),
+        )
 
     @property
     def relationship_ids(self) -> tuple[str, ...]:
