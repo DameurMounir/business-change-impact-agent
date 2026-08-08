@@ -1,0 +1,72 @@
+{
+  "classification": "FICTIONAL_SYNTHETIC_CASE_EVIDENCE",
+  "document_id": "DOC-05",
+  "schema_version": "1.0.0",
+  "statements": [
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-05",
+      "locator": "section-1",
+      "schema_version": "1.0.0",
+      "statement_id": "S-033",
+      "text": "The applicant status touchpoint uses approved received, action-required, activated and declined templates in this demonstration scope."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-05",
+      "locator": "section-2",
+      "schema_version": "1.0.0",
+      "statement_id": "S-034",
+      "text": "Every notification template must use plain language and provide an alternative support route."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-05",
+      "locator": "section-3",
+      "schema_version": "1.0.0",
+      "statement_id": "S-035",
+      "text": "The received template confirms successful submission and the accountable case reference."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-05",
+      "locator": "section-4",
+      "schema_version": "1.0.0",
+      "statement_id": "S-036",
+      "text": "The action-required template identifies missing evidence without exposing internal risk logic."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-05",
+      "locator": "section-5",
+      "schema_version": "1.0.0",
+      "statement_id": "S-037",
+      "text": "The activated template confirms activation after the evidence-bound gate and any required approval."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-05",
+      "locator": "section-6",
+      "schema_version": "1.0.0",
+      "statement_id": "S-038",
+      "text": "The declined template states the outcome and the permitted support route without exposing restricted screening details."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-05",
+      "locator": "section-7",
+      "schema_version": "1.0.0",
+      "statement_id": "S-039",
+      "text": "Failed notifications are routed to the notification support procedure for controlled follow-up."
+    },
+    {
+      "classification": "AUTHORISED_SYNTHETIC_EVIDENCE",
+      "document_id": "DOC-05",
+      "locator": "section-8",
+      "schema_version": "1.0.0",
+      "statement_id": "S-040",
+      "text": "Accessibility validation evidence is required before the pilot can claim the templates meet the stated standard."
+    }
+  ],
+  "title": "Applicant communication and accessibility standard"
+}

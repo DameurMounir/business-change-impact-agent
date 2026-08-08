@@ -1,0 +1,8 @@
+{
+  "candidate_id": "CAND-REVERSE-001",
+  "expected_reason_code": "UNKNOWN_RELATIONSHIP",
+  "origin_change_id": "CC-03",
+  "path_relationship_ids": [
+    "R-999"
+  ]
+}

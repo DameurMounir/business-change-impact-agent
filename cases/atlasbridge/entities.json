@@ -1,0 +1,1127 @@
+{
+  "entities": [
+    {
+      "applicability_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT",
+      "description": "Replace repeated capture with one controlled reusable application record.",
+      "entity_id": "CC-01",
+      "entity_type": "CHANGE_COMPONENT",
+      "name": "Reusable intake record",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-001"
+      ],
+      "tags": [
+        "authorised-change"
+      ]
+    },
+    {
+      "applicability_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT",
+      "description": "Assign one accountable case owner through the complete outcome lifecycle.",
+      "entity_id": "CC-02",
+      "entity_type": "CHANGE_COMPONENT",
+      "name": "Accountable case owner",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-002"
+      ],
+      "tags": [
+        "authorised-change"
+      ]
+    },
+    {
+      "applicability_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT",
+      "description": "Run independent checks in parallel after the completeness gate.",
+      "entity_id": "CC-03",
+      "entity_type": "CHANGE_COMPONENT",
+      "name": "Parallel independent checks",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-003"
+      ],
+      "tags": [
+        "authorised-change"
+      ]
+    },
+    {
+      "applicability_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT",
+      "description": "Route incomplete, failed or contradictory checks to a controlled exception lane.",
+      "entity_id": "CC-04",
+      "entity_type": "CHANGE_COMPONENT",
+      "name": "Dedicated exception lane",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-004"
+      ],
+      "tags": [
+        "authorised-change"
+      ]
+    },
+    {
+      "applicability_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT",
+      "description": "Block activation without mandatory evidence and named approval for high risk.",
+      "entity_id": "CC-05",
+      "entity_type": "CHANGE_COMPONENT",
+      "name": "Evidence-bound activation",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-005"
+      ],
+      "tags": [
+        "authorised-change"
+      ]
+    },
+    {
+      "applicability_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT",
+      "description": "Generate controlled notifications at authorised case states.",
+      "entity_id": "CC-06",
+      "entity_type": "CHANGE_COMPONENT",
+      "name": "Automated applicant notifications",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-006"
+      ],
+      "tags": [
+        "authorised-change"
+      ]
+    },
+    {
+      "applicability_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT",
+      "description": "Apply pilot size, duration, threshold, escalation and halt boundaries.",
+      "entity_id": "CC-07",
+      "entity_type": "CHANGE_COMPONENT",
+      "name": "Controlled pilot guardrails",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-007"
+      ],
+      "tags": [
+        "authorised-change"
+      ]
+    },
+    {
+      "applicability_status": "AUTHORISED_FOR_IMPACT_ASSESSMENT",
+      "description": "Monitor evidence, queues, exceptions, notification failures and activation controls.",
+      "entity_id": "CC-08",
+      "entity_type": "CHANGE_COMPONENT",
+      "name": "Operational observability",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-008"
+      ],
+      "tags": [
+        "authorised-change"
+      ]
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Capability to accept, assess and conclude applicant onboarding.",
+      "entity_id": "CAP-ONBOARDING",
+      "entity_type": "BUSINESS_CAPABILITY",
+      "name": "Applicant onboarding",
+      "owner_role_id": null,
+      "primary_domain": "BUSINESS_CAPABILITY",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-009"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "End-to-end applicant onboarding process.",
+      "entity_id": "PROC-ONBOARDING",
+      "entity_type": "PROCESS",
+      "name": "Applicant onboarding process",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-009",
+        "S-010"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Capture one reusable application record.",
+      "entity_id": "STEP-INTAKE",
+      "entity_type": "PROCESS_STEP",
+      "name": "Capture application",
+      "owner_role_id": null,
+      "primary_domain": "PROCESS_STEP",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-001",
+        "S-010"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Verify mandatory fields and evidence before specialist checks.",
+      "entity_id": "STEP-COMPLETENESS",
+      "entity_type": "PROCESS_STEP",
+      "name": "Completeness gate",
+      "owner_role_id": null,
+      "primary_domain": "PROCESS_STEP",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-010",
+        "S-025"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Validate applicant documents after completeness.",
+      "entity_id": "STEP-DOC-VALIDATION",
+      "entity_type": "PROCESS_STEP",
+      "name": "Document validation",
+      "owner_role_id": null,
+      "primary_domain": "PROCESS_STEP",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-003",
+        "S-010"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Perform compliance screening after completeness.",
+      "entity_id": "STEP-COMPLIANCE",
+      "entity_type": "PROCESS_STEP",
+      "name": "Compliance screening",
+      "owner_role_id": null,
+      "primary_domain": "PROCESS_STEP",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-003",
+        "S-010"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Perform standard-risk review after completeness.",
+      "entity_id": "STEP-RISK-REVIEW",
+      "entity_type": "PROCESS_STEP",
+      "name": "Standard-risk review",
+      "owner_role_id": null,
+      "primary_domain": "PROCESS_STEP",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-003",
+        "S-010"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Triage incomplete, failed or contradictory checks.",
+      "entity_id": "STEP-EXCEPTION",
+      "entity_type": "PROCESS_STEP",
+      "name": "Exception triage and resolution",
+      "owner_role_id": null,
+      "primary_domain": "PROCESS_STEP",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-004",
+        "S-014"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Verify evidence and approval before activation.",
+      "entity_id": "STEP-ACTIVATION-GATE",
+      "entity_type": "PROCESS_STEP",
+      "name": "Evidence-bound activation gate",
+      "owner_role_id": null,
+      "primary_domain": "PROCESS_STEP",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-005",
+        "S-027"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Capture named human approval for high-risk activation.",
+      "entity_id": "STEP-HIGH-RISK-APPROVAL",
+      "entity_type": "PROCESS_STEP",
+      "name": "High-risk approval",
+      "owner_role_id": null,
+      "primary_domain": "PROCESS_STEP",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-005",
+        "S-028"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Send an approved status notification for authorised states.",
+      "entity_id": "STEP-NOTIFICATION",
+      "entity_type": "PROCESS_STEP",
+      "name": "Applicant status notification",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-006",
+        "S-033"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Procedure for ownership, checks, exceptions, activation and notifications.",
+      "entity_id": "PROCEDURE-ONBOARDING",
+      "entity_type": "PROCEDURE",
+      "name": "Controlled onboarding procedure",
+      "owner_role_id": null,
+      "primary_domain": "OPERATING_PROCEDURE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-015"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Accountable owner for case progression and exception coordination.",
+      "entity_id": "ROLE-CASE-OWNER",
+      "entity_type": "ROLE",
+      "name": "Case owner",
+      "owner_role_id": null,
+      "primary_domain": "ROLE_AND_TEAM",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-002",
+        "S-011"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Performs document validation.",
+      "entity_id": "ROLE-DOC-ANALYST",
+      "entity_type": "ROLE",
+      "name": "Document analyst",
+      "owner_role_id": null,
+      "primary_domain": "ROLE_AND_TEAM",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-012"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Performs compliance screening.",
+      "entity_id": "ROLE-COMPLIANCE-ANALYST",
+      "entity_type": "ROLE",
+      "name": "Compliance analyst",
+      "owner_role_id": null,
+      "primary_domain": "ROLE_AND_TEAM",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-012"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Performs standard-risk review and activation evidence review.",
+      "entity_id": "ROLE-RISK-ANALYST",
+      "entity_type": "ROLE",
+      "name": "Risk analyst",
+      "owner_role_id": null,
+      "primary_domain": "ROLE_AND_TEAM",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-012"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Named human authority for high-risk activation.",
+      "entity_id": "ROLE-HIGH-RISK-APPROVER",
+      "entity_type": "ROLE",
+      "name": "High-risk approver",
+      "owner_role_id": null,
+      "primary_domain": "AUTHORITY_AND_SEGREGATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-005",
+        "S-028"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Operates onboarding, exception and pilot monitoring activities.",
+      "entity_id": "TEAM-ONBOARDING",
+      "entity_type": "TEAM",
+      "name": "Onboarding operations team",
+      "owner_role_id": null,
+      "primary_domain": "ROLE_AND_TEAM",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-014",
+        "S-048"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Only the named high-risk approver may confirm a high-risk activation.",
+      "entity_id": "AUTH-HIGH-RISK",
+      "entity_type": "AUTHORITY_RULE",
+      "name": "Named high-risk approval authority",
+      "owner_role_id": null,
+      "primary_domain": "AUTHORITY_AND_SEGREGATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-028"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "The risk reviewer and high-risk approver must be different roles.",
+      "entity_id": "SOD-REVIEW-APPROVE",
+      "entity_type": "SEGREGATION_RULE",
+      "name": "Risk review and approval segregation",
+      "owner_role_id": null,
+      "primary_domain": "AUTHORITY_AND_SEGREGATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-029"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Training on ownership, parallel checks, exceptions, activation and notifications.",
+      "entity_id": "TRAIN-CHANGE",
+      "entity_type": "TRAINING_ITEM",
+      "name": "Onboarding change briefing",
+      "owner_role_id": null,
+      "primary_domain": "SKILL_AND_TRAINING",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-013"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Stores case, evidence, status and approval records.",
+      "entity_id": "SYS-CASE-MANAGEMENT",
+      "entity_type": "SYSTEM",
+      "name": "Case management system",
+      "owner_role_id": null,
+      "primary_domain": "SYSTEM_AND_APPLICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-017"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Coordinates gates, checks, routing and activation.",
+      "entity_id": "SYS-WORKFLOW",
+      "entity_type": "SYSTEM",
+      "name": "Workflow orchestration system",
+      "owner_role_id": null,
+      "primary_domain": "SYSTEM_AND_APPLICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-018"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Sends controlled applicant communications.",
+      "entity_id": "SYS-NOTIFICATION",
+      "entity_type": "SYSTEM",
+      "name": "Notification system",
+      "owner_role_id": null,
+      "primary_domain": "SYSTEM_AND_APPLICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-019"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Application component that creates and updates the reusable intake record.",
+      "entity_id": "APP-REUSABLE-INTAKE",
+      "entity_type": "APPLICATION_COMPONENT",
+      "name": "Reusable intake component",
+      "owner_role_id": null,
+      "primary_domain": "SYSTEM_AND_APPLICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-024"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Interface used by workflow to request external screening.",
+      "entity_id": "IFACE-SCREENING",
+      "entity_type": "INTERFACE",
+      "name": "Screening interface",
+      "owner_role_id": null,
+      "primary_domain": "INTEGRATION_AND_EXTERNAL_SERVICE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-020"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Integration between the screening interface and external service.",
+      "entity_id": "INT-SCREENING",
+      "entity_type": "INTEGRATION",
+      "name": "Screening integration",
+      "owner_role_id": null,
+      "primary_domain": "INTEGRATION_AND_EXTERNAL_SERVICE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-020"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Controlled reusable applicant information record.",
+      "entity_id": "DATA-APPLICATION",
+      "entity_type": "DATA_OBJECT",
+      "name": "Reusable application record",
+      "owner_role_id": null,
+      "primary_domain": "DATA_AND_INFORMATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-001",
+        "S-017"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Mandatory evidence associated with the case.",
+      "entity_id": "DATA-EVIDENCE",
+      "entity_type": "DATA_OBJECT",
+      "name": "Evidence pack",
+      "owner_role_id": null,
+      "primary_domain": "DATA_AND_INFORMATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-017",
+        "S-027"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Authorised status used by workflow and notifications.",
+      "entity_id": "DATA-CASE-STATUS",
+      "entity_type": "DATA_OBJECT",
+      "name": "Case status",
+      "owner_role_id": null,
+      "primary_domain": "DATA_AND_INFORMATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-017",
+        "S-033"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Evidence of named human approval for high-risk activation.",
+      "entity_id": "DATA-APPROVAL",
+      "entity_type": "DATA_OBJECT",
+      "name": "Approval record",
+      "owner_role_id": null,
+      "primary_domain": "DATA_AND_INFORMATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-017",
+        "S-028"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Accountable owner of onboarding application, evidence, status and approval data.",
+      "entity_id": "OWNER-ONBOARDING-DATA",
+      "entity_type": "DATA_OWNER",
+      "name": "Onboarding data owner",
+      "owner_role_id": null,
+      "primary_domain": "DATA_AND_INFORMATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-022"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Reports pilot KPIs and control observations.",
+      "entity_id": "REPORT-PILOT-DASHBOARD",
+      "entity_type": "REPORT",
+      "name": "Pilot operations dashboard",
+      "owner_role_id": null,
+      "primary_domain": "REPORTING_AND_METRICS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-041",
+        "S-048"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Measures evidence completeness at activation.",
+      "entity_id": "KPI-EVIDENCE",
+      "entity_type": "KPI",
+      "name": "Evidence completeness KPI",
+      "owner_role_id": null,
+      "primary_domain": "REPORTING_AND_METRICS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-042"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Monitors open pilot cases against the threshold.",
+      "entity_id": "KPI-QUEUE",
+      "entity_type": "KPI",
+      "name": "Open queue KPI",
+      "owner_role_id": null,
+      "primary_domain": "PILOT_AND_OPERATIONAL_GUARDRAIL",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-043"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Measures controlled notification delivery failures.",
+      "entity_id": "KPI-NOTIFICATION",
+      "entity_type": "KPI",
+      "name": "Notification failure KPI",
+      "owner_role_id": null,
+      "primary_domain": "REPORTING_AND_METRICS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-044"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Measures activation attempts against evidence and approval rules.",
+      "entity_id": "KPI-ACTIVATION",
+      "entity_type": "KPI",
+      "name": "Activation control KPI",
+      "owner_role_id": null,
+      "primary_domain": "CONTROL_AND_POLICY",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-045"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Target for exception triage and escalation.",
+      "entity_id": "SLA-EXCEPTION",
+      "entity_type": "SLA",
+      "name": "Exception handling service target",
+      "owner_role_id": null,
+      "primary_domain": "SERVICE_AND_SUPPORT",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-046"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Blocks checks until mandatory intake and evidence are present.",
+      "entity_id": "CTRL-COMPLETENESS",
+      "entity_type": "CONTROL",
+      "name": "Completeness control",
+      "owner_role_id": null,
+      "primary_domain": "CONTROL_AND_POLICY",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-025"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Permits parallelism only for independent checks.",
+      "entity_id": "CTRL-INDEPENDENCE",
+      "entity_type": "CONTROL",
+      "name": "Independent checks control",
+      "owner_role_id": null,
+      "primary_domain": "CONTROL_AND_POLICY",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-026"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Blocks activation without evidence and required approval.",
+      "entity_id": "CTRL-ACTIVATION",
+      "entity_type": "CONTROL",
+      "name": "Activation evidence control",
+      "owner_role_id": null,
+      "primary_domain": "CONTROL_AND_POLICY",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-027"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Enforces pilot size, duration, threshold and halt conditions.",
+      "entity_id": "CTRL-PILOT",
+      "entity_type": "CONTROL",
+      "name": "Pilot boundary and halt control",
+      "owner_role_id": null,
+      "primary_domain": "PILOT_AND_OPERATIONAL_GUARDRAIL",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-031",
+        "S-047"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Policy governing completeness, evidence retention, ownership and activation outcomes.",
+      "entity_id": "POLICY-ONBOARDING",
+      "entity_type": "POLICY",
+      "name": "Onboarding evidence and decision policy",
+      "owner_role_id": null,
+      "primary_domain": "CONTROL_AND_POLICY",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-030"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Applicant-facing status communications for authorised states.",
+      "entity_id": "TOUCH-STATUS",
+      "entity_type": "CUSTOMER_TOUCHPOINT",
+      "name": "Applicant status touchpoint",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-033"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Confirms successful submission and case reference.",
+      "entity_id": "COMM-RECEIVED",
+      "entity_type": "COMMUNICATION_TEMPLATE",
+      "name": "Submission received template",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-035"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Requests missing evidence without exposing restricted logic.",
+      "entity_id": "COMM-ACTION",
+      "entity_type": "COMMUNICATION_TEMPLATE",
+      "name": "Action required template",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-036"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Confirms activation after evidence and approval gates.",
+      "entity_id": "COMM-ACTIVATED",
+      "entity_type": "COMMUNICATION_TEMPLATE",
+      "name": "Activated template",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-037"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Communicates decline and permitted support route.",
+      "entity_id": "COMM-DECLINED",
+      "entity_type": "COMMUNICATION_TEMPLATE",
+      "name": "Declined template",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-038"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Notification text must use plain language.",
+      "entity_id": "ACCESS-PLAIN-LANGUAGE",
+      "entity_type": "ACCESSIBILITY_REQUIREMENT",
+      "name": "Plain-language requirement",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-034",
+        "S-040"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Notifications must provide an alternative support route.",
+      "entity_id": "ACCESS-ALTERNATIVE-ROUTE",
+      "entity_type": "ACCESSIBILITY_REQUIREMENT",
+      "name": "Alternative support route",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-034",
+        "S-040"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Fictional external service used for screening.",
+      "entity_id": "EXT-SCREENING",
+      "entity_type": "EXTERNAL_SERVICE",
+      "name": "CheckRight screening service",
+      "owner_role_id": null,
+      "primary_domain": "INTEGRATION_AND_EXTERNAL_SERVICE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-021",
+        "S-057"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Fictional supplier of the external screening service.",
+      "entity_id": "VENDOR-CHECKRIGHT",
+      "entity_type": "VENDOR",
+      "name": "CheckRight",
+      "owner_role_id": null,
+      "primary_domain": "INTEGRATION_AND_EXTERNAL_SERVICE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-021",
+        "S-057"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Verifies completeness and independence before parallel execution.",
+      "entity_id": "TEST-PARALLEL",
+      "entity_type": "TEST_CASE",
+      "name": "Parallel independent checks test",
+      "owner_role_id": null,
+      "primary_domain": "TEST_AND_ASSURANCE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-049"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Verifies evidence and high-risk approval blocking behavior.",
+      "entity_id": "TEST-ACTIVATION",
+      "entity_type": "TEST_CASE",
+      "name": "Activation gate test",
+      "owner_role_id": null,
+      "primary_domain": "TEST_AND_ASSURANCE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-050"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Defines monitoring, escalation, halt, recovery and evidence capture.",
+      "entity_id": "RUNBOOK-PILOT",
+      "entity_type": "RUNBOOK",
+      "name": "Pilot operations runbook",
+      "owner_role_id": null,
+      "primary_domain": "PILOT_AND_OPERATIONAL_GUARDRAIL",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-051"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Defines retry, alternative contact and escalation.",
+      "entity_id": "SUPPORT-NOTIFICATION",
+      "entity_type": "SUPPORT_PROCEDURE",
+      "name": "Failed notification support procedure",
+      "owner_role_id": null,
+      "primary_domain": "SERVICE_AND_SUPPORT",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-039",
+        "S-052"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "UNRESOLVED",
+      "description": "Assumption that the screening vendor can support pilot parallelism.",
+      "entity_id": "ASM-VENDOR-CAPACITY",
+      "entity_type": "ASSUMPTION",
+      "name": "Vendor pilot capacity",
+      "owner_role_id": null,
+      "primary_domain": "INTEGRATION_AND_EXTERNAL_SERVICE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-057"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "UNRESOLVED",
+      "description": "Assumption that templates meet accessibility requirements pending evidence.",
+      "entity_id": "ASM-ACCESSIBILITY",
+      "entity_type": "ASSUMPTION",
+      "name": "Template accessibility validation",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-058"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "UNRESOLVED",
+      "description": "Assumption that pilot dashboard latency supports operational decisions.",
+      "entity_id": "ASM-DASHBOARD-LATENCY",
+      "entity_type": "ASSUMPTION",
+      "name": "Dashboard latency",
+      "owner_role_id": null,
+      "primary_domain": "PILOT_AND_OPERATIONAL_GUARDRAIL",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-059"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "ACTIVE",
+      "description": "Pilot is limited to ten percent for fourteen calendar days and 300 open cases.",
+      "entity_id": "CON-PILOT-LIMIT",
+      "entity_type": "CONSTRAINT",
+      "name": "Ten-percent fourteen-day pilot",
+      "owner_role_id": null,
+      "primary_domain": "PILOT_AND_OPERATIONAL_GUARDRAIL",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-007",
+        "S-031"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "OPEN",
+      "description": "Bounded vendor capacity evidence has not yet been supplied.",
+      "entity_id": "GAP-VENDOR-CAPACITY",
+      "entity_type": "EVIDENCE_GAP",
+      "name": "Vendor capacity evidence gap",
+      "owner_role_id": null,
+      "primary_domain": "INTEGRATION_AND_EXTERNAL_SERVICE",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-057"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "OPEN",
+      "description": "Template accessibility validation evidence is not yet recorded.",
+      "entity_id": "GAP-ACCESSIBILITY",
+      "entity_type": "EVIDENCE_GAP",
+      "name": "Accessibility validation gap",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-058"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "OPEN",
+      "description": "Pilot-load dashboard latency has not yet been measured.",
+      "entity_id": "GAP-DASHBOARD-LATENCY",
+      "entity_type": "EVIDENCE_GAP",
+      "name": "Dashboard latency evidence gap",
+      "owner_role_id": null,
+      "primary_domain": "PILOT_AND_OPERATIONAL_GUARDRAIL",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-059"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "EXPLICITLY_UNAFFECTED",
+      "description": "Product pricing is explicitly unchanged.",
+      "entity_id": "NEG-PRICING",
+      "entity_type": "NEGATIVE_CONTROL",
+      "name": "Product pricing",
+      "owner_role_id": null,
+      "primary_domain": "BUSINESS_CAPABILITY",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-032",
+        "S-060"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "EXPLICITLY_UNAFFECTED",
+      "description": "Payroll is explicitly unchanged.",
+      "entity_id": "NEG-PAYROLL",
+      "entity_type": "NEGATIVE_CONTROL",
+      "name": "Payroll process",
+      "owner_role_id": null,
+      "primary_domain": "END_TO_END_PROCESS",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-016",
+        "S-060"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "EXPLICITLY_UNAFFECTED",
+      "description": "The core ledger is explicitly unchanged.",
+      "entity_id": "NEG-CORE-LEDGER",
+      "entity_type": "NEGATIVE_CONTROL",
+      "name": "Core ledger",
+      "owner_role_id": null,
+      "primary_domain": "SYSTEM_AND_APPLICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-060"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "EXPLICITLY_UNAFFECTED",
+      "description": "Office location is explicitly unchanged.",
+      "entity_id": "NEG-OFFICE-LOCATION",
+      "entity_type": "NEGATIVE_CONTROL",
+      "name": "Office location",
+      "owner_role_id": null,
+      "primary_domain": "BUSINESS_CAPABILITY",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-016",
+        "S-060"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "EXPLICITLY_UNAFFECTED",
+      "description": "Marketing campaigns are explicitly unchanged.",
+      "entity_id": "NEG-MARKETING",
+      "entity_type": "NEGATIVE_CONTROL",
+      "name": "Marketing campaigns",
+      "owner_role_id": null,
+      "primary_domain": "CUSTOMER_AND_COMMUNICATION",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-060"
+      ],
+      "tags": []
+    },
+    {
+      "applicability_status": "EXPLICITLY_UNAFFECTED",
+      "description": "Employee benefits are explicitly unchanged.",
+      "entity_id": "NEG-EMPLOYEE-BENEFITS",
+      "entity_type": "NEGATIVE_CONTROL",
+      "name": "Employee benefits",
+      "owner_role_id": null,
+      "primary_domain": "ROLE_AND_TEAM",
+      "schema_version": "1.0.0",
+      "source_evidence_refs": [
+        "S-060"
+      ],
+      "tags": []
+    }
+  ],
+  "schema_version": "1.0.0"
+}
