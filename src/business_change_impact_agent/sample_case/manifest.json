@@ -1,0 +1,67 @@
+{
+  "algorithm": "SHA-256",
+  "case_id": "ATLASBRIDGE-ONBOARDING-IMPACT-001",
+  "files": [
+    {
+      "path": "case-metadata.json",
+      "sha256": "185610d1071e86494a6febd50c13c61140a21288bd3db36564cc1c2dc19b49ea",
+      "size_bytes": 418
+    },
+    {
+      "path": "change-package.json",
+      "sha256": "04d6ad808e34d411290cdcd41b86a8eadecaa18e7b2416ac608421d51b8d54a5",
+      "size_bytes": 2615
+    },
+    {
+      "path": "entities.json",
+      "sha256": "e36368e30431f9bdbc6d05798459f9091cb70315980e82010103a832220a5c64",
+      "size_bytes": 34662
+    },
+    {
+      "path": "evidence/doc-01.json",
+      "sha256": "38eca268f4f44bf08637c7aff164e9b300977d0266b4968d151d5192b0d88834",
+      "size_bytes": 2903
+    },
+    {
+      "path": "evidence/doc-02.json",
+      "sha256": "b70a753258035a4abe3817c0e0e248434ab4f8165c5fedf88fd22e94e316f4c6",
+      "size_bytes": 2799
+    },
+    {
+      "path": "evidence/doc-03.json",
+      "sha256": "20cd18cc275f0e155b9259fda10f491e7247ac901bdea5a03350587030c14990",
+      "size_bytes": 2645
+    },
+    {
+      "path": "evidence/doc-04.json",
+      "sha256": "547b3029a604536e7c317feb9904ce411b25b70033c9a44c59badc91bee32f25",
+      "size_bytes": 2669
+    },
+    {
+      "path": "evidence/doc-05.json",
+      "sha256": "46dd8d4521b5c35bde74669e2c8765f054dad722088fa8642aa91b52af813aae",
+      "size_bytes": 2733
+    },
+    {
+      "path": "evidence/doc-06.json",
+      "sha256": "8138b8214ec31481532000f6812a32c59fad6ccd6979e2346944f041dd8073a7",
+      "size_bytes": 2628
+    },
+    {
+      "path": "evidence/doc-07.json",
+      "sha256": "5f4f98ea8958c9e54ae947d7ae51a292fecb668e2b04458c012bbd1ddc32988d",
+      "size_bytes": 2643
+    },
+    {
+      "path": "evidence/doc-08.json",
+      "sha256": "0866cb5152c240e563300c4fb6d5c8b7e6d4ccf2c46200df74af3fe7caf4efc5",
+      "size_bytes": 2757
+    },
+    {
+      "path": "relationships.json",
+      "sha256": "bcc73e1261ec7591c9645681e3dfb68f9f74ff503de464d02346a5e8892a62fe",
+      "size_bytes": 65995
+    }
+  ],
+  "schema_version": "1.0.0"
+}

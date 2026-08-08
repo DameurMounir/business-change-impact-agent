@@ -1,0 +1,13 @@
+{
+  "case_freeze": "2026-08-01",
+  "case_id": "ATLASBRIDGE-ONBOARDING-IMPACT-001",
+  "data_classification": "PUBLIC_SYNTHETIC",
+  "entity_minimum": 65,
+  "live_model_evaluation_status": "NOT_RUN",
+  "maximum_propagation_edges_from_change": 4,
+  "organisation": "AtlasBridge Services",
+  "organisation_status": "FICTIONAL",
+  "relationship_minimum": 100,
+  "schema_version": "1.0.0",
+  "source_statement_minimum": 50
+}
